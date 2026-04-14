@@ -102,15 +102,27 @@ def run_extract(pdf_file: str, query: str, output_type_str: str, examples_json: 
         }
 
 
-with gr.Blocks(title="PDF Data Extraction for Legal Documents") as demo:
-    gr.Markdown("#PDF Data Extraction for Legal Documents")
+# 🔥 Custom styling
+custom_css = """
+h1 { font-size: 36px !important; font-weight: 700 !important; }
+h2 { font-size: 22px !important; margin-top: 10px !important; }
+.section { padding: 15px; border-radius: 10px; background: #f9fafb; }
+.gr-button { font-size: 16px !important; padding: 10px !important; }
+"""
+
+
+with gr.Blocks(title="PDF Data Extraction", css=custom_css) as demo:
+
+    gr.Markdown("# 📄 PDF Data Extraction")
     gr.Markdown(
-        "Upload a legal PDF, enter one extraction query, choose the expected output type, "
-        "and view the structured JSON result."
+        "Upload a legal PDF, enter a query, and extract structured information."
     )
 
     with gr.Row():
+
         with gr.Column(scale=1):
+            gr.Markdown("## 🔹 Input")
+
             pdf_file = gr.File(
                 label="Upload PDF",
                 file_types=[".pdf"],
@@ -130,15 +142,17 @@ with gr.Blocks(title="PDF Data Extraction for Legal Documents") as demo:
             )
 
             examples_json = gr.Textbox(
-                label="Few-shot Examples (optional JSON array)",
+                label="Few-shot Examples (optional)",
                 value="",
                 placeholder=DEFAULT_EXAMPLES_JSON,
-                lines=12,
+                lines=10,
             )
 
             run_btn = gr.Button("Run Extraction", variant="primary")
 
         with gr.Column(scale=1):
+            gr.Markdown("## 🔹 Output")
+
             result_json = gr.JSON(label="Result")
 
     run_btn.click(
