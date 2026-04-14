@@ -2,13 +2,13 @@
 
 This is a Legal PDF QnA Agent built for the HyperVerge AI Lead take-home assignment.
 
-The system extracts **one field per call** from a legal PDF using:
+The system extracts **one field per call** from a PDF using:
 
 * a natural-language query
 * an expected output type
 * optional few-shot examples
-  
-Although it is optimized for legal Retrieval any kind of PDF can be uploaded.
+
+Although the system is optimized for legal-style retrieval and extraction, other text-based PDFs can also be used.
 
 It returns structured JSON with:
 
@@ -95,9 +95,10 @@ The pipeline is split into separate parts:
 
 ## Setup
 
-Create / activate your environment first.
+Create and activate a fresh conda environment:
 
 ```bash
+conda create -n hv_env python=3.10 -y
 conda activate hv_env
 ```
 
@@ -105,12 +106,6 @@ Install dependencies:
 
 ```bash
 pip install -r requirements.txt
-```
-
-If needed:
-
-```bash
-pip install pymupdf
 ```
 
 Set your API key:
@@ -132,13 +127,13 @@ export OPENAI_MODEL="gpt-4.1-mini"
 Example:
 
 ```bash
-python cli.py --pdf "test_docs/Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf" --query "What law governs this plan?" --output-type string
+python cli.py --pdf "test_docs/PolicySoftCopy_1105948950.pdf" --query "What is the total premium payable?" --output-type number
 ```
 
 Another example:
 
 ```bash
-python cli.py --pdf "test_docs/PolicySoftCopy_1105948950.pdf" --query "What is the total premium payable?" --output-type number
+python cli.py --pdf "test_docs/SampleContract-2.pdf" --query "Who are the named parties in this agreement?" --output-type "array[string]"
 ```
 
 Array example:
@@ -156,9 +151,9 @@ from src.legal_extract.service import extract
 from src.legal_extract.schemas import OutputType
 
 result = extract(
-    pdf="test_docs/Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
-    query="What law governs this plan?",
-    output_type=OutputType.STRING,
+    pdf="test_docs/PolicySoftCopy_1105948950.pdf",
+    query="What is the total premium payable?",
+    output_type=OutputType.NUMBER,
 )
 
 print(result)
@@ -186,7 +181,7 @@ print(result)
 
 ## Few-shot examples
 
-Few-shot examples can be passed in through the `examples` argument.
+Few-shot examples can be passed through the `examples` argument.
 
 ```python
 from src.legal_extract.service import extract
@@ -206,8 +201,8 @@ examples = [
 ]
 
 result = extract(
-    pdf="test_docs/Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
-    query="What is the maximum term of an option under the plan?",
+    pdf="test_docs/SampleContract-2.pdf",
+    query="What is the governing law?",
     output_type=OutputType.STRING,
     examples=examples,
 )
@@ -261,15 +256,7 @@ Saved outputs:
 
 ## What was tested
 
-I created a curated **30-case end-to-end evaluation set** across these 5 PDFs:
-
-* `AI Lead Assignment - 1.pdf`
-* `CHETU-NDA_Consultant-India Avijit Kundal.pdf`
-* `Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf`
-* `Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf`
-* `PolicySoftCopy_1105948950.pdf`
-
-The test set covers:
+I created a curated **30-case end-to-end evaluation set** covering:
 
 * string
 * date
@@ -293,14 +280,6 @@ The test set covers:
 * **Source attribution validity: 100%**
 * **Average latency: 14.04 seconds/query**
 
-### Per-document
-
-* `AI Lead Assignment - 1.pdf` → **6/6**
-* `CHETU-NDA_Consultant-India Avijit Kundal.pdf` → **6/6**
-* `Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf` → **6/6**
-* `Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf` → **6/6**
-* `PolicySoftCopy_1105948950.pdf` → **6/6**
-
 ### Per-output-type
 
 * `string` → **18/18**
@@ -322,7 +301,7 @@ The test set covers:
 
 I initially explored using the **CUAD** dataset for evaluation, since it is a common legal benchmark. It was useful as a stress test, but in practice it was harder to debug while building the system because the dataset was available in JSON/text form, not as original PDFs in the same workflow I was testing. That meant I could evaluate extraction quality, but the PDF parsing side was not really under my control in that setup.
 
-Because of that, and because I could not easily find many good legal PDFs in a convenient format, I also collected a set of my **own older legal / contract / policy PDFs** and used them for practical end-to-end testing. That made it much easier to inspect:
+Because of that, and because it was hard to find enough convenient PDF-format legal data for debugging, I also used a curated set of sample PDFs for practical end-to-end testing. That made it much easier to inspect:
 
 * the original document
 * parsed text
@@ -330,7 +309,7 @@ Because of that, and because I could not easily find many good legal PDFs in a c
 * retrieved evidence
 * final extracted answer
 
-So the final test results in this repo are mainly based on documents where I could directly verify the full pipeline end to end.
+So the final test results in this repo are based on documents where I could directly verify the full pipeline end to end.
 
 ---
 
@@ -344,7 +323,7 @@ Main limitations right now:
 * party extraction and legal disambiguation can still be tricky on more complex documents
 * the current evaluation is strong, but still limited in size compared to a large benchmark
 
-Even though the final curated 30-case run passed completely, broader legal-document coverage would still benefit from:
+Even though the final curated 30-case run passed completely, broader PDF coverage would still benefit from:
 
 * more evaluation data
 * OCR fallback for harder PDFs
