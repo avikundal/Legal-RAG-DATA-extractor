@@ -1,4 +1,4 @@
-# PDF Data Extraction for Legal Documents 
+# PDF Data Extraction for Legal Documents
 
 This is a PDF Data Extractor built for the HyperVerge AI Lead take-home assignment.
 
@@ -133,7 +133,7 @@ python cli.py --pdf "test_docs/PolicySoftCopy_1105948950.pdf" --query "What is t
 Another example:
 
 ```bash
-python cli.py --pdf "test_docs/SampleContract-2.pdf" --query "Who are the named parties in this agreement?" --output-type "array[string]"
+python cli.py --pdf "test_docs/SampleContract-2.pdf" --query "Who is the first party?" --output-type string
 ```
 
 Array example:
@@ -202,7 +202,7 @@ examples = [
 
 result = extract(
     pdf="test_docs/SampleContract-2.pdf",
-    query="What is the governing law?",
+    query="Who is the second party?",
     output_type=OutputType.STRING,
     examples=examples,
 )
@@ -261,39 +261,59 @@ I created a curated **30-case end-to-end evaluation set** covering:
 * string
 * date
 * number
-* array[string]
-* array[date]
 * array[number]
+* array[date]
 * found cases
 * not-found cases
 * bytes input
 * few-shot input
 
+The evaluation was run on these public/sample PDFs:
+
+* `AI Lead Assignment - 1.pdf`
+* `Contract document.pdf`
+* `Loan Documentation - Customer copy_KB251222XCOIZ.pdf`
+* `PolicySoftCopy_1105948950.pdf`
+* `SampleContract-2.pdf`
+* `SampleContract-Shuttle.pdf`
+
 ### Final curated results
 
 * **30 total cases**
-* **30 passed**
-* **0 failed**
-* **Pass rate: 100%**
+* **29 passed**
+* **1 failed**
+* **Pass rate: 96.67%**
 * **Found/not-found correctness: 100%**
 * **Type-valid outputs: 100%**
 * **Source attribution validity: 100%**
-* **Average latency: 14.04 seconds/query**
+* **Average latency: 18.30 seconds/query**
+
+### Per-document
+
+* `AI Lead Assignment - 1.pdf` → **6/6**
+* `Contract document.pdf` → **4/5**
+* `Loan Documentation - Customer copy_KB251222XCOIZ.pdf` → **5/5**
+* `PolicySoftCopy_1105948950.pdf` → **5/5**
+* `SampleContract-2.pdf` → **4/4**
+* `SampleContract-Shuttle.pdf` → **5/5**
 
 ### Per-output-type
 
-* `string` → **18/18**
-* `number` → **6/6**
-* `date` → **3/3**
+* `string` → **13/13**
+* `number` → **12/12**
+* `date` → **2/3**
 * `array[number]` → **1/1**
-* `array[string]` → **1/1**
 * `array[date]` → **1/1**
 
 ### Additional coverage
 
 * **1 bytes-input case**
 * **1 few-shot case**
-* **3 expected not-found cases**
+* **1 expected not-found case**
+
+### Unit tests
+
+* **25 unit tests passed**
 
 ---
 
@@ -301,7 +321,7 @@ I created a curated **30-case end-to-end evaluation set** covering:
 
 I initially explored using the **CUAD** dataset for evaluation, since it is a common legal benchmark. It was useful as a stress test, but in practice it was harder to debug while building the system because the dataset was available in JSON/text form, not as original PDFs in the same workflow I was testing. That meant I could evaluate extraction quality, but the PDF parsing side was not really under my control in that setup.
 
-Because of that, and because it was hard to find enough convenient PDF-format legal data for debugging, I also used a curated set of sample PDFs for practical end-to-end testing. That made it much easier to inspect:
+Because of that, I used a curated set of public/sample PDFs for practical end-to-end testing. That made it much easier to inspect:
 
 * the original document
 * parsed text
@@ -323,7 +343,9 @@ Main limitations right now:
 * party extraction and legal disambiguation can still be tricky on more complex documents
 * the current evaluation is strong, but still limited in size compared to a large benchmark
 
-Even though the final curated 30-case run passed completely, broader PDF coverage would still benefit from:
+In the final public-document evaluation, the only failed case came from a contract-style document where a date-like clause was retrieved instead of the exact commencement date. This highlights that dense legal/template contracts can still require stronger clause-level retrieval or reranking for date extraction.
+
+Broader PDF coverage would still benefit from:
 
 * more evaluation data
 * OCR fallback for harder PDFs
