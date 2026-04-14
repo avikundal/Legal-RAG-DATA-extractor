@@ -102,8 +102,8 @@ def run_extract(pdf_file: str, query: str, output_type_str: str, examples_json: 
         }
 
 
-with gr.Blocks(title="Legal PDF QnA Agent") as demo:
-    gr.Markdown("# Legal PDF QnA Agent")
+with gr.Blocks(title="PDF Data Extraction for Legal Documents") as demo:
+    gr.Markdown("#PDF Data Extraction for Legal Documents")
     gr.Markdown(
         "Upload a legal PDF, enter one extraction query, choose the expected output type, "
         "and view the structured JSON result."
