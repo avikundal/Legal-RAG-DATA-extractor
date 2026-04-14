@@ -29,7 +29,7 @@
     "found_match": true,
     "type_valid": true,
     "source_valid": true,
-    "latency_sec": 10.7337
+    "latency_sec": 10.9547
   },
   {
     "case_id": 2,
@@ -61,7 +61,7 @@
     "found_match": true,
     "type_valid": true,
     "source_valid": true,
-    "latency_sec": 10.1651
+    "latency_sec": 10.777
   },
   {
     "case_id": 3,
@@ -93,7 +93,7 @@
     "found_match": true,
     "type_valid": true,
     "source_valid": true,
-    "latency_sec": 10.1221
+    "latency_sec": 9.905
   },
   {
     "case_id": 4,
@@ -125,7 +125,7 @@
     "found_match": true,
     "type_valid": true,
     "source_valid": true,
-    "latency_sec": 9.0362
+    "latency_sec": 11.7476
   },
   {
     "case_id": 5,
@@ -173,7 +173,7 @@
     "found_match": true,
     "type_valid": true,
     "source_valid": true,
-    "latency_sec": 8.9065
+    "latency_sec": 11.2284
   },
   {
     "case_id": 6,
@@ -198,634 +198,129 @@
     "found_match": true,
     "type_valid": true,
     "source_valid": true,
-    "latency_sec": 8.8624
+    "latency_sec": 11.0492
   },
   {
     "case_id": 7,
-    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
-    "query": "What is the company name?",
+    "doc_name": "Contract document.pdf",
+    "query": "What is the name of the institute?",
     "output_type": "string",
     "expected_found": true,
-    "expected": null,
-    "expected_any": [
-      "CHETU",
-      "Chetu (I) Pvt. Ltd.",
-      "CHETU (INDIA) PVT. LTD."
-    ],
+    "expected": "Indian Institute of Technology Kanpur",
+    "expected_any": null,
     "input_mode": "path",
     "used_examples": false,
     "prediction": {
-      "value": "Chetu (I) Pvt. Ltd.",
+      "value": "Indian Institute of Technology Kanpur (IITK)",
       "found": true,
       "sources": [
         {
-          "page": 6,
-          "snippet": "FULLY UNDERSTAND AND AGREE TO ALL OF ITS TERMS. Approved and Accepted by: Consultant: Chetu (I) Pvt. Ltd.: ______________________________ Name: __________ _______ Name: ________________ _______ Mr. Title: _____________ _______ Title: ________________________ Date: ______ Date:"
-        },
-        {
           "page": 4,
-          "snippet": "Chetu (I) Pvt. Ltd. Information), including, without limitation, any designs, forms, formulas, materials, products, deliverables, work product, developmental or experimental work, computer software programs (including, without limitation, images, text, source code, object code, html code and scri..."
-        },
-        {
-          "page": 5,
-          "snippet": "Chetu (I) Pvt. Ltd. Agreement, the Company shall have the right, in addition to any other rights or remedies it may have: (a) to a temporary, preliminary or permanent injunction or injunctions and temporary restraining order or orders to prevent breaches of such provisions and to specifically enf..."
+          "snippet": "1.5 The \"Institute\" shall mean the Indian Institute of Technology Kanpur (IITK) with its premises located at Kalyanpur, Kanpur 208016 and shall include its authorized representatives, successors and assignees."
         }
       ],
       "error": null
     },
     "match_pass": true,
     "match_info": {
-      "reason": "string_contains_any",
-      "expected_any": [
-        "CHETU",
-        "Chetu (I) Pvt. Ltd.",
-        "CHETU (INDIA) PVT. LTD."
-      ],
-      "pred": "Chetu (I) Pvt. Ltd."
+      "reason": "string_contains",
+      "expected": "Indian Institute of Technology Kanpur",
+      "pred": "Indian Institute of Technology Kanpur (IITK)"
     },
     "found_match": true,
     "type_valid": true,
     "source_valid": true,
-    "latency_sec": 11.7055
+    "latency_sec": 14.1321
   },
   {
     "case_id": 8,
-    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
-    "query": "Who is the consultant?",
-    "output_type": "string",
+    "doc_name": "Contract document.pdf",
+    "query": "What is the security deposit amount?",
+    "output_type": "number",
     "expected_found": true,
-    "expected": "Avijit Kundal",
+    "expected": 500000,
     "expected_any": null,
     "input_mode": "path",
     "used_examples": false,
     "prediction": {
-      "value": "Avijit Kundal",
+      "value": 500000,
       "found": true,
       "sources": [
         {
-          "page": 1,
-          "snippet": "CHETU (INDIA) PVT. LTD., H-6, SECTOR-63, NOIDA-201301, UTTAR PRADESH (“Company”) AND me, Avijit Kundal(Dimple) PAN Number (______________________) also referred to as “Consultant”."
+          "page": 17,
+          "snippet": "6.0 General Instructions to the Service provider: Security Deposit: The service provider shall be required to deposit Rs. 5,00,000/- (rupees five lakhs only) by a Demand Draft drawn in favour of the Hall Management, IIT Kanpur as Security Deposit towards successful execution of the messing The Se..."
         },
         {
-          "page": 6,
-          "snippet": "Confidential v 12.29.16 _______________________________ [Signature] [Authorized Signatory] Avijit Kundal _ Consultant Initials _____ Company Initials: ______"
+          "page": 2,
+          "snippet": "AND whereas the Service Provider has agreed to execute, upon and subject to the condition set forth herein, (hereinafter referred to as the said conditions) the work shown in the General Conditions of the Contract. AND whereas the Service Provider has deposited a sum of Rs. __________ (___ lakhs..."
         }
       ],
       "error": null
     },
     "match_pass": true,
     "match_info": {
-      "reason": "string_contains",
-      "expected": "Avijit Kundal",
-      "pred": "Avijit Kundal"
+      "reason": "number_exact",
+      "expected": 500000,
+      "pred": 500000
     },
     "found_match": true,
     "type_valid": true,
     "source_valid": true,
-    "latency_sec": 11.7637
+    "latency_sec": 14.7737
   },
   {
     "case_id": 9,
-    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
-    "query": "What is the hourly compensation?",
-    "output_type": "number",
-    "expected_found": true,
-    "expected": 4000,
-    "expected_any": null,
-    "input_mode": "path",
-    "used_examples": false,
-    "prediction": {
-      "value": 4000,
-      "found": true,
-      "sources": [
-        {
-          "page": 1,
-          "snippet": "2.COMPENSATION. For my Services, Company agrees to pay Consultant, the sum of Rs.4000/-per hour.Fixed actually worked. The Company shall not be obligated to provide a minimum number of hours of work nor shall Consultant be entitled to receive any compensation for hours not actually worked.0 The C..."
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "number_exact",
-      "expected": 4000,
-      "pred": 4000
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 12.6949
-  },
-  {
-    "case_id": 10,
-    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
-    "query": "What is the non-disparagement duration?",
-    "output_type": "string",
-    "expected_found": true,
-    "expected": "2 years",
-    "expected_any": null,
-    "input_mode": "path",
-    "used_examples": false,
-    "prediction": {
-      "value": "2 years after termination",
-      "found": true,
-      "sources": [
-        {
-          "page": 3,
-          "snippet": "6.NON-DISPARAGMENT. While providing Services and for a period of 2 years after termination, I agree not to make any statement, written or verbal, or cause or encourage others to make any statement, written or verbal, that defame, disparage or in any way criticize the personal or business reputati..."
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "string_contains",
-      "expected": "2 years",
-      "pred": "2 years after termination"
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 11.965
-  },
-  {
-    "case_id": 11,
-    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
-    "query": "What is the non-compete duration?",
-    "output_type": "string",
-    "expected_found": true,
-    "expected": null,
-    "expected_any": [
-      "five (5) years",
-      "5 years"
-    ],
-    "input_mode": "path",
-    "used_examples": true,
-    "prediction": {
-      "value": "five (5) years",
-      "found": true,
-      "sources": [
-        {
-          "page": 3,
-          "snippet": "7.NON-COMPETE AND NON-SOLICIT. I acknowledge that other than for the sole purpose of benefiting the Company, I shall not, directly or indirectly or through another party: contact, work for, solicit or hire any of Company’s clients, Company’s clients’ personnel, vendors, partners, Company’s person..."
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "string_contains_any",
-      "expected_any": [
-        "five (5) years",
-        "5 years"
-      ],
-      "pred": "five (5) years"
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 11.1598
-  },
-  {
-    "case_id": 12,
-    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
-    "query": "What is the renewal term?",
-    "output_type": "string",
-    "expected_found": false,
-    "expected": null,
-    "expected_any": null,
-    "input_mode": "path",
-    "used_examples": false,
-    "prediction": {
-      "value": null,
-      "found": false,
-      "sources": [],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "correct_not_found"
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 11.1298
-  },
-  {
-    "case_id": 13,
-    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
-    "query": "What position is being offered?",
-    "output_type": "string",
-    "expected_found": true,
-    "expected": "Senior AI Engineer",
-    "expected_any": null,
-    "input_mode": "path",
-    "used_examples": false,
-    "prediction": {
-      "value": "Senior AI Engineer",
-      "found": true,
-      "sources": [
-        {
-          "page": 1,
-          "snippet": "OFFER LETTER Date: 12 Aug, 2024 Dear Avijit Kundal, Congratulations & Welcome to Flamily! We are delighted to offer you a position of Senior AI Engineer with Flying Flamingos India Private Limited (Flam) at Bangalore, India. We feel that your skills and background will be valued assets to our org..."
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "string_contains",
-      "expected": "Senior AI Engineer",
-      "pred": "Senior AI Engineer"
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 14.317
-  },
-  {
-    "case_id": 14,
-    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
-    "query": "What is the company name?",
-    "output_type": "string",
-    "expected_found": true,
-    "expected": "Flying Flamingos India Private Limited",
-    "expected_any": null,
-    "input_mode": "path",
-    "used_examples": false,
-    "prediction": {
-      "value": "Flying Flamingos India Private Limited",
-      "found": true,
-      "sources": [
-        {
-          "page": 1,
-          "snippet": "2) General: The proposed start date of your employment at Flying Flamingos India Private Limited is 13th Aug 2024. The available CTC components along with limits have been detailed in Annexure 1B. Annexure 1A and the detailed \"Terms & Conditions of Employment\" in Annexure 2 together set forth the..."
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "string_contains",
-      "expected": "Flying Flamingos India Private Limited",
-      "pred": "Flying Flamingos India Private Limited"
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 15.1816
-  },
-  {
-    "case_id": 15,
-    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
-    "query": "What is the proposed start date?",
+    "doc_name": "Contract document.pdf",
+    "query": "When did the service provider commence the work?",
     "output_type": "date",
     "expected_found": true,
-    "expected": "2024-08-13",
-    "expected_any": null,
-    "input_mode": "bytes",
-    "used_examples": false,
-    "prediction": {
-      "value": "2024-08-13",
-      "found": true,
-      "sources": [
-        {
-          "page": 1,
-          "snippet": "2) General: The proposed start date of your employment at Flying Flamingos India Private Limited is 13th Aug 2024. The available CTC components along with limits have been detailed in Annexure 1B. Annexure 1A and the detailed \"Terms & Conditions of Employment\" in Annexure 2 together set forth the..."
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "date_exact",
-      "expected": "2024-08-13",
-      "pred": "2024-08-13"
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 13.7972
-  },
-  {
-    "case_id": 16,
-    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
-    "query": "What is the total CTC?",
-    "output_type": "number",
-    "expected_found": true,
-    "expected": 4000000,
+    "expected": "2012-10-01",
     "expected_any": null,
     "input_mode": "path",
     "used_examples": false,
     "prediction": {
-      "value": 4000000,
-      "found": true,
-      "sources": [
-        {
-          "page": 2,
-          "snippet": "200,000 Total CTC (I)"
-        },
-        {
-          "page": 2,
-          "snippet": "CTC(I) | 3,800,000 | 316,667 ContributiontotheEmployerPF | 21,600 | 1,800 Gross | 3,778,400 | 314,867 Earning BasicSalary | 1,889,200 | 157,433"
-        },
-        {
-          "page": 1,
-          "snippet": "1) Compensation: Your compensation on a Cost to Company (CTC) basis will be Rs.40,00,000/- (Forty Lakhs only) per annum and will be payable as under. Please refer to Annexure 1A for detailed breakup of your CTC. a) Fixed Pay: Rs. 38,00,000 Only per annum b) ESOPs : Rs. 5,00,000 Only c) Retention..."
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "number_exact",
-      "expected": 4000000,
-      "pred": 4000000
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 13.8245
-  },
-  {
-    "case_id": 17,
-    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
-    "query": "What is the fixed pay?",
-    "output_type": "number",
-    "expected_found": true,
-    "expected": 3800000,
-    "expected_any": null,
-    "input_mode": "path",
-    "used_examples": false,
-    "prediction": {
-      "value": 3800000,
-      "found": true,
-      "sources": [
-        {
-          "page": 1,
-          "snippet": "1) Compensation: Your compensation on a Cost to Company (CTC) basis will be Rs.40,00,000/- (Forty Lakhs only) per annum and will be payable as under. Please refer to Annexure 1A for detailed breakup of your CTC. a) Fixed Pay: Rs. 38,00,000 Only per annum b) ESOPs : Rs. 5,00,000 Only c) Retention..."
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "number_exact",
-      "expected": 3800000,
-      "pred": 3800000
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 13.4601
-  },
-  {
-    "case_id": 18,
-    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
-    "query": "List the compensation headline components.",
-    "output_type": "array[string]",
-    "expected_found": true,
-    "expected": [
-      "Fixed Pay",
-      "ESOPs",
-      "Retention Bonus"
-    ],
-    "expected_any": null,
-    "input_mode": "path",
-    "used_examples": false,
-    "prediction": {
-      "value": [
-        "Fixed Pay",
-        "ESOPs",
-        "Retention Bonus"
-      ],
-      "found": true,
-      "sources": [
-        {
-          "page": 1,
-          "snippet": "1) Compensation: Your compensation on a Cost to Company (CTC) basis will be Rs.40,00,000/- (Forty Lakhs only) per annum and will be payable as under. Please refer to Annexure 1A for detailed breakup of your CTC. a) Fixed Pay: Rs. 38,00,000 Only per annum b) ESOPs : Rs. 5,00,000 Only c) Retention..."
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "array_string_subset",
-      "expected": [
-        "Fixed Pay",
-        "ESOPs",
-        "Retention Bonus"
-      ],
-      "pred": [
-        "Fixed Pay",
-        "ESOPs",
-        "Retention Bonus"
-      ]
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 11.277
-  },
-  {
-    "case_id": 19,
-    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
-    "query": "What is the purpose of this plan?",
-    "output_type": "string",
-    "expected_found": true,
-    "expected": "capital stock ownership",
-    "expected_any": null,
-    "input_mode": "path",
-    "used_examples": false,
-    "prediction": {
-      "value": "The purpose of this plan (the “Plan”) is to secure for Flamingos Technologies Inc., a Delaware corporation (the “Company”) and its shareholders the benefits arising from capital stock ownership by employees, officers and directors of, and consultants or advisors to, the Company and its parent and subsidiary corporations who are expected to contribute to the Company’s future growth and success.",
-      "found": true,
-      "sources": [
-        {
-          "page": 1,
-          "snippet": "1. Purpose. The purpose of this plan (the “Plan”) is to secure for Flamingos Technologies Inc., a Delaware corporation (the “Company”) and its shareholders the benefits arising from capital stock ownership by employees, officers and directors of, and consultants or advisors to, the Company and it..."
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "string_contains",
-      "expected": "capital stock ownership",
-      "pred": "The purpose of this plan (the “Plan”) is to secure for Flamingos Technologies Inc., a Delaware corporation (the “Company”) and its shareholders the benefits arising from capital stock ownership by employees, officers and directors of, and consultants or advisors to, the Company and its parent and subsidiary corporations who are expected to contribute to the Company’s future growth and success."
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 13.0736
-  },
-  {
-    "case_id": 20,
-    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
-    "query": "Who administers the plan?",
-    "output_type": "string",
-    "expected_found": true,
-    "expected": null,
-    "expected_any": [
-      "Board",
-      "Board of Directors"
-    ],
-    "input_mode": "path",
-    "used_examples": false,
-    "prediction": {
-      "value": "Board of Directors",
-      "found": true,
-      "sources": [
-        {
-          "page": 2,
-          "snippet": "The Board may correct any defect or supply any omission or reconcile any inconsistency in the Plan or in any Restricted Stock Agreement or Option Agreement in the manner and to the extent it shall deem expedient to carry the Plan into effect and it shall be the sole and final judge of such expedi..."
-        },
-        {
-          "page": 1,
-          "snippet": "1. Purpose. The purpose of this plan (the “Plan”) is to secure for Flamingos Technologies Inc., a Delaware corporation (the “Company”) and its shareholders the benefits arising from capital stock ownership by employees, officers and directors of, and consultants or advisors to, the Company and it..."
-        },
-        {
-          "page": 2,
-          "snippet": "grant) of more than $100,000. If an Option is intended to be an Incentive Stock Option, and if for any reason such Option (or any portion thereof) shall not qualify as an Incentive Stock Option, then, to the extent of such nonqualification, such Option (or portion thereof) shall be regarded as a..."
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "string_contains_any",
-      "expected_any": [
-        "Board",
-        "Board of Directors"
-      ],
-      "pred": "Board of Directors"
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 16.5541
-  },
-  {
-    "case_id": 21,
-    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
-    "query": "Who can receive incentive stock options?",
-    "output_type": "string",
-    "expected_found": true,
-    "expected": "employees of the Company",
-    "expected_any": null,
-    "input_mode": "path",
-    "used_examples": false,
-    "prediction": {
-      "value": "employees of the Company",
-      "found": true,
-      "sources": [
-        {
-          "page": 1,
-          "snippet": "1. Purpose. The purpose of this plan (the “Plan”) is to secure for Flamingos Technologies Inc., a Delaware corporation (the “Company”) and its shareholders the benefits arising from capital stock ownership by employees, officers and directors of, and consultants or advisors to, the Company and it..."
-        },
-        {
-          "page": 2,
-          "snippet": "The Board may correct any defect or supply any omission or reconcile any inconsistency in the Plan or in any Restricted Stock Agreement or Option Agreement in the manner and to the extent it shall deem expedient to carry the Plan into effect and it shall be the sole and final judge of such expedi..."
-        },
-        {
-          "page": 1,
-          "snippet": "The vesting of Options may be conditioned upon the completion of a specified period of employment with the Company and/or such other conditions or events as the Board may determine. The Board may also provide that Options are immediately exercisable subject to certain repurchase rights in the Com..."
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "string_contains",
-      "expected": "employees of the Company",
-      "pred": "employees of the Company"
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 15.9475
-  },
-  {
-    "case_id": 22,
-    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
-    "query": "What is the maximum term of an option under the plan?",
-    "output_type": "string",
-    "expected_found": true,
-    "expected": "ten years",
-    "expected_any": null,
-    "input_mode": "path",
-    "used_examples": false,
-    "prediction": {
-      "value": "ten years",
-      "found": true,
-      "sources": [
-        {
-          "page": 5,
-          "snippet": "Option Period. Notwithstanding any other provision of the Plan or any Option Agreement, each Option and all rights thereunder shall expire on the date specified in the applicable Option Agreement, provided that such date shall not be later than ten years after the date on which the Option is gran..."
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "string_contains",
-      "expected": "ten years",
-      "pred": "ten years"
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 13.949
-  },
-  {
-    "case_id": 23,
-    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
-    "query": "What happens to options after voluntary termination?",
-    "output_type": "string",
-    "expected_found": true,
-    "expected": "90 days",
-    "expected_any": null,
-    "input_mode": "path",
-    "used_examples": false,
-    "prediction": {
-      "value": "Options terminate 90 days after the date of voluntary termination of the optionee’s employment with, or provision of services to, the Company by the optionee (other than for death or permanent disability). Until the date on which the Option so expires, the optionee may exercise that portion of his or her Option which is exercisable at the time of termination of the employment or service relationship.",
-      "found": true,
-      "sources": [
-        {
-          "page": 6,
-          "snippet": "90 days after the date of voluntary termination of the optionee’s employment with, or provision of services to, the Company by the optionee (other than for death or permanent disability as defined below); or (iv)"
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "string_contains",
-      "expected": "90 days",
-      "pred": "Options terminate 90 days after the date of voluntary termination of the optionee’s employment with, or provision of services to, the Company by the optionee (other than for death or permanent disability). Until the date on which the Option so expires, the optionee may exercise that portion of his or her Option which is exercisable at the time of termination of the employment or service relationship."
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 14.4525
-  },
-  {
-    "case_id": 24,
-    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
-    "query": "What law governs this plan?",
-    "output_type": "string",
-    "expected_found": true,
-    "expected": "Delaware",
-    "expected_any": null,
-    "input_mode": "path",
-    "used_examples": false,
-    "prediction": {
-      "value": "the laws of Delaware",
+      "value": "2026-04-10",
       "found": true,
       "sources": [
         {
           "page": 13,
-          "snippet": "25. Governing Law. This Plan and each Option or Restricted Stock Award shall be governed by the laws of Delaware, without regard to its principles of conflicts of law."
+          "snippet": "4.11 The service provider shall have to mobilize his resources so as to commence the work within 10 (Ten) days from the date of signing of contract."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": false,
+    "match_info": {
+      "reason": "date_exact",
+      "expected": "2012-10-01",
+      "pred": "2026-04-10"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 17.6399
+  },
+  {
+    "case_id": 10,
+    "doc_name": "Contract document.pdf",
+    "query": "Which courts have jurisdiction under this agreement?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "Kanpur",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "courts in Kanpur",
+      "found": true,
+      "sources": [
+        {
+          "page": 3,
+          "snippet": "6. All disputes arising out of or in any way connected with this agreement shall be deemed to have arisen in Kanpur and only courts in Kanpur shall have jurisdiction to determine the same."
+        },
+        {
+          "page": 28,
+          "snippet": "28 force in India. The service provider shall hereby submit to the jurisdiction of the courts situated at Kanpur for the purpose of actions and proceedings arising out of the contract and the courts at Kanpur shall have the sole jurisdiction to hear and decide such actions and proceedings."
         }
       ],
       "error": null
@@ -833,16 +328,264 @@
     "match_pass": true,
     "match_info": {
       "reason": "string_contains",
-      "expected": "Delaware",
-      "pred": "the laws of Delaware"
+      "expected": "Kanpur",
+      "pred": "courts in Kanpur"
     },
     "found_match": true,
     "type_valid": true,
     "source_valid": true,
-    "latency_sec": 13.9178
+    "latency_sec": 13.7718
   },
   {
-    "case_id": 25,
+    "case_id": 11,
+    "doc_name": "Contract document.pdf",
+    "query": "What is the empanelment period?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "2 (Two) years",
+    "expected_any": null,
+    "input_mode": "bytes",
+    "used_examples": false,
+    "prediction": {
+      "value": "2 (Two) years",
+      "found": true,
+      "sources": [
+        {
+          "page": 4,
+          "snippet": "1.3 The “Empanelment” shall mean enlistment of service provider for a limited period of 2 (Two) years, extendable at the end of the empanelment period at the discretion of institute, for providing operational services in the messes of Halls of Residences on the campus of the Institute."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "2 (Two) years",
+      "pred": "2 (Two) years"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 14.1521
+  },
+  {
+    "case_id": 12,
+    "doc_name": "Loan Documentation - Customer copy_KB251222XCOIZ.pdf",
+    "query": "What is the total loan amount?",
+    "output_type": "number",
+    "expected_found": true,
+    "expected": 27500,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": 27500,
+      "found": true,
+      "sources": [
+        {
+          "page": 3,
+          "snippet": "6. Loan Amount (INR) Lender 2 - 27500 Total Loan Amount - 27500 Total interest chargeable during the entire tenure of"
+        },
+        {
+          "page": 3,
+          "snippet": "6. | Loan Amount (INR) | Lender 1 - Not Applicable Lender 2 - 27500 Total Loan Amount - 27500"
+        },
+        {
+          "page": 23,
+          "snippet": "2 | Sanctioned Loan Amount (in Rupees) | Lender 1 - Not Applicable Lender 2 - 27500 Total Amount - 27500"
+        },
+        {
+          "page": 28,
+          "snippet": "AVIJIT KUNDAL Account Type Lender 1 - INR Not Applicable towards personal loan Loan Amount Lender 2 - INR 27500 towards personal loan Total Loan Amount (Principal Loan Amount) - INR 27500 towards personal loan Tenure Annualized Fixed Rate of Interest: (% Per Annum)"
+        },
+        {
+          "page": 28,
+          "snippet": "THE MOST IMPORTANT TERMS AND CONDITIONS - MITC We refer to the Transaction Documents for grant of the Loan. Capitalized terms used but not defined hereunder shall have the meaning ascribed to the term in other Transaction Documents. The Borrower acknowledges and confirms that the below mentioned..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "number_exact",
+      "expected": 27500,
+      "pred": 27500
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 35.1029
+  },
+  {
+    "case_id": 13,
+    "doc_name": "Loan Documentation - Customer copy_KB251222XCOIZ.pdf",
+    "query": "What is the annualized fixed rate of interest?",
+    "output_type": "number",
+    "expected_found": true,
+    "expected": 28,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": 28,
+      "found": true,
+      "sources": [
+        {
+          "page": 3,
+          "snippet": "8. | Annualized Fixed Rate of Interest: (% Per Annum)*** | 28%"
+        },
+        {
+          "page": 28,
+          "snippet": "rate applicable at the time of Part-Prepayment will be charged to the Borrower.) Foreclosure Charges, if applicable The Loan Foreclosure Charges are exclusive of GST which shall be charged @18% at the time of Loan Foreclosure Charges - May be applicable at the discretion of Co-Lender(s). If the B..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "number_exact",
+      "expected": 28,
+      "pred": 28
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 35.2305
+  },
+  {
+    "case_id": 14,
+    "doc_name": "Loan Documentation - Customer copy_KB251222XCOIZ.pdf",
+    "query": "What is the loan term in months?",
+    "output_type": "number",
+    "expected_found": true,
+    "expected": 9,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": 9,
+      "found": true,
+      "sources": [
+        {
+          "page": 23,
+          "snippet": "4 | Loan Term(months) | 9 months"
+        },
+        {
+          "page": 23,
+          "snippet": "4 Loan Term(months) 9 months"
+        },
+        {
+          "page": 28,
+          "snippet": "THE MOST IMPORTANT TERMS AND CONDITIONS - MITC We refer to the Transaction Documents for grant of the Loan. Capitalized terms used but not defined hereunder shall have the meaning ascribed to the term in other Transaction Documents. The Borrower acknowledges and confirms that the below mentioned..."
+        },
+        {
+          "page": 3,
+          "snippet": "10. | Loan Term (In Months) | 9 months"
+        },
+        {
+          "page": 3,
+          "snippet": "10. Loan Term (In Months) 9 months"
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "number_exact",
+      "expected": 9,
+      "pred": 9
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 35.8539
+  },
+  {
+    "case_id": 15,
+    "doc_name": "Loan Documentation - Customer copy_KB251222XCOIZ.pdf",
+    "query": "What is the net disbursed amount?",
+    "output_type": "number",
+    "expected_found": true,
+    "expected": 25414,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": 25414,
+      "found": true,
+      "sources": [
+        {
+          "page": 4,
+          "snippet": "13. Net Disbursed Amount (INR)"
+        },
+        {
+          "page": 4,
+          "snippet": "13. | Net Disbursed Amount (INR) | 25414"
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "number_exact",
+      "expected": 25414,
+      "pred": 25414
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 34.8018
+  },
+  {
+    "case_id": 16,
+    "doc_name": "Loan Documentation - Customer copy_KB251222XCOIZ.pdf",
+    "query": "What is the cooling-off period?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "3 days",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": true,
+    "prediction": {
+      "value": "3 days",
+      "found": true,
+      "sources": [
+        {
+          "page": 29,
+          "snippet": "500 Annual Percentage Rate (% Per Annum) | 47.77% Cooling-off Period | 3 days Repayment Schedule | As per Annexure C Retained Processing Fee"
+        },
+        {
+          "page": 4,
+          "snippet": "19. Cooling-off Period"
+        },
+        {
+          "page": 11,
+          "snippet": "1.7 Cooling-off Period means a period of time from the date of disbursement of loan within which the borrower can change her/ his mind with return or cancellation of the loan, by paying the fees/charges as mentioned in the KFS, Sanction Letter and Transaction Documents; 1.8 Due Date means the dat..."
+        },
+        {
+          "page": 6,
+          "snippet": "2. Cooling-Off Period: A Cooling-Off Period is the time window being provided to the Borrower after the disbursement of the Loan, for exiting the Loan in case the Borrower decides not to continue with the Loan. In such event, a one-time Processing Fee along with the proportionate GST at such rate..."
+        },
+        {
+          "page": 6,
+          "snippet": "1. Annual Percentage Rate (APR): APR is the effective annualized rate charged to the borrower of a digital loan. APR shall be based on an all-inclusive cost and margin including cost of funds, credit cost and operating cost, Processing Fee, and applicable GST, Loan Documentation Fees and the appl..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "3 days",
+      "pred": "3 days"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 35.7364
+  },
+  {
+    "case_id": 17,
     "doc_name": "PolicySoftCopy_1105948950.pdf",
     "query": "What is the policy number?",
     "output_type": "string",
@@ -879,50 +622,10 @@
     "found_match": true,
     "type_valid": true,
     "source_valid": true,
-    "latency_sec": 16.7763
+    "latency_sec": 16.887
   },
   {
-    "case_id": 26,
-    "doc_name": "PolicySoftCopy_1105948950.pdf",
-    "query": "What is the insured's name?",
-    "output_type": "string",
-    "expected_found": true,
-    "expected": "AVIJIT KUNDAL",
-    "expected_any": null,
-    "input_mode": "path",
-    "used_examples": false,
-    "prediction": {
-      "value": "AVIJIT KUNDAL",
-      "found": true,
-      "sources": [
-        {
-          "page": 1,
-          "snippet": "Compulsory Personal Accident (Owner Driver) under Motor Insurance Policies Policy Schedule Important: 1) The validity of this certificate of Insurance cum policy is subject to realization by the company of the premium cheque paid by the Insured Policy Number: 920292623071050303 Proposal/Cover not..."
-        },
-        {
-          "page": 4,
-          "snippet": "2a. Proposer's Full Name | Mr Mrs. Ms. AVIJIT KUNDAL"
-        },
-        {
-          "page": 5,
-          "snippet": "17. Personal Accident cover for Owner-Driver. Please give details of nomination. Name | AVIJIT KUNDAL Name of Nominee | ROOP CHAND Age of Nominee | 68 Name of Appointee Relationship | Father Address Note:"
-        }
-      ],
-      "error": null
-    },
-    "match_pass": true,
-    "match_info": {
-      "reason": "string_contains",
-      "expected": "AVIJIT KUNDAL",
-      "pred": "AVIJIT KUNDAL"
-    },
-    "found_match": true,
-    "type_valid": true,
-    "source_valid": true,
-    "latency_sec": 29.0067
-  },
-  {
-    "case_id": 27,
+    "case_id": 18,
     "doc_name": "PolicySoftCopy_1105948950.pdf",
     "query": "What is the policy start date?",
     "output_type": "date",
@@ -940,12 +643,12 @@
           "snippet": "NA Policy Detail Policy Period Start Date:05/04/2026 00:00 End Date : 04/04/2027 23:59 Renewable Date :05/04/2027 Nominee Details Name :"
         },
         {
-          "page": 5,
-          "snippet": "12. Period of Insurance | From 00:00 Hrs of 05/04/2026 00:00 To Mid Night of"
-        },
-        {
           "page": 4,
           "snippet": "05/04/2026 00:00 Sourcing Reference No. Inspection Lead No. Intermediary Details (Office Use Only) Intermediary Name Policybazaar Insurance Brokers Code"
+        },
+        {
+          "page": 5,
+          "snippet": "12. Period of Insurance | From 00:00 Hrs of 05/04/2026 00:00 To Mid Night of"
         }
       ],
       "error": null
@@ -959,10 +662,10 @@
     "found_match": true,
     "type_valid": true,
     "source_valid": true,
-    "latency_sec": 18.1767
+    "latency_sec": 19.1588
   },
   {
-    "case_id": 28,
+    "case_id": 19,
     "doc_name": "PolicySoftCopy_1105948950.pdf",
     "query": "What is the total premium payable?",
     "output_type": "number",
@@ -995,10 +698,10 @@
     "found_match": true,
     "type_valid": true,
     "source_valid": true,
-    "latency_sec": 18.7458
+    "latency_sec": 19.2372
   },
   {
-    "case_id": 29,
+    "case_id": 20,
     "doc_name": "PolicySoftCopy_1105948950.pdf",
     "query": "List the policy period dates.",
     "output_type": "array[date]",
@@ -1051,31 +754,350 @@
     "found_match": true,
     "type_valid": true,
     "source_valid": true,
-    "latency_sec": 18.392
+    "latency_sec": 18.4351
   },
   {
-    "case_id": 30,
+    "case_id": 21,
     "doc_name": "PolicySoftCopy_1105948950.pdf",
-    "query": "What is the deductible amount?",
-    "output_type": "number",
-    "expected_found": false,
-    "expected": null,
+    "query": "What is the nominee relationship?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "Father",
     "expected_any": null,
     "input_mode": "path",
     "used_examples": false,
     "prediction": {
-      "value": null,
-      "found": false,
-      "sources": [],
+      "value": "Father",
+      "found": true,
+      "sources": [
+        {
+          "page": 5,
+          "snippet": "17. Personal Accident cover for Owner-Driver. Please give details of nomination. Name | AVIJIT KUNDAL Name of Nominee | ROOP CHAND Age of Nominee | 68 Name of Appointee Relationship | Father Address Note:"
+        },
+        {
+          "page": 1,
+          "snippet": "ROOP CHAND Age :68 Relationship :Father G34, F Block, SLS SUMMERFIELDS, AECS Layout MOHALI,Karnataka-560068 Details of Insured Name"
+        }
+      ],
       "error": null
     },
     "match_pass": true,
     "match_info": {
-      "reason": "correct_not_found"
+      "reason": "string_contains",
+      "expected": "Father",
+      "pred": "Father"
     },
     "found_match": true,
     "type_valid": true,
     "source_valid": true,
-    "latency_sec": 22.0816
+    "latency_sec": 17.1658
+  },
+  {
+    "case_id": 22,
+    "doc_name": "SampleContract-2.pdf",
+    "query": "Who is the first party?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "NGO/UN agency",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "NGO/UN agency",
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "SAMPLE CONTRACT This contract (The Agreement) is effective (Date) between NGO/UN agency hereinafter referred to as the “first party“ and Company/agent hereinafter referred to as “second party“ WHEREAS the first party desires to transfer money from Turkey into Syria within the frame of its humanit..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "NGO/UN agency",
+      "pred": "NGO/UN agency"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 14.4092
+  },
+  {
+    "case_id": 23,
+    "doc_name": "SampleContract-2.pdf",
+    "query": "Who is the second party?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "Company/agent",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "Company/agent",
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "SAMPLE CONTRACT This contract (The Agreement) is effective (Date) between NGO/UN agency hereinafter referred to as the “first party“ and Company/agent hereinafter referred to as “second party“ WHEREAS the first party desires to transfer money from Turkey into Syria within the frame of its humanit..."
+        },
+        {
+          "page": 2,
+          "snippet": "5.2 Should either of the parties intend to terminate this agreement prematurely, notice of two weeks must be submitted to the other party in writing, in order to end the agreement on good terms. ARTICLE 6. Dispute Resolution"
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "Company/agent",
+      "pred": "Company/agent"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 13.1887
+  },
+  {
+    "case_id": 24,
+    "doc_name": "SampleContract-2.pdf",
+    "query": "How many days after distribution must the first party reimburse the second party in a hawala transaction?",
+    "output_type": "number",
+    "expected_found": true,
+    "expected": 3,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": 3,
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "2.6 In a hawala transaction where no physical cash provided to the second party is taken cross-border, reimburse the same amount plus the agreed commission charge by bank transfer within no more than 3 days after the distribution; 2.7 In a transaction where physical cash provided to the second pa..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "number_exact",
+      "expected": 3,
+      "pred": 3
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 29.2712
+  },
+  {
+    "case_id": 25,
+    "doc_name": "SampleContract-2.pdf",
+    "query": "What is the commission for Sarmada?",
+    "output_type": "number",
+    "expected_found": true,
+    "expected": 0.6,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": 0.6,
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "3.1 Apply the highest reasonable standard of diligence to ensure that the money transferred under this agreeement is not transferred to any individual or entity listed as a Designated Terrorist; 3.2 Provide first party’s representatives with Syrian Pounds (SYP), Turkish Liras (TL) or US Dollars (..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "number_exact",
+      "expected": 0.6,
+      "pred": 0.6
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 12.6768
+  },
+  {
+    "case_id": 26,
+    "doc_name": "SampleContract-Shuttle.pdf",
+    "query": "Who is the client party in this agreement?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "COMMISSION",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "SANTA CRUZ COUNTY REGIONAL TRANSPORTATION COMMISSION",
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "PROFESSIONAL SERVICES AGREEMENT THIS AGREEMENT made and entered into this _______day of , 20 by and between the SANTA CRUZ COUNTY REGIONAL TRANSPORTATION COMMISSION, hereinafter called COMMISSION, and ________ ____, hereinafter called CONSULTANT for __________________ (services/project name)."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "COMMISSION",
+      "pred": "SANTA CRUZ COUNTY REGIONAL TRANSPORTATION COMMISSION"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 13.5386
+  },
+  {
+    "case_id": 27,
+    "doc_name": "SampleContract-Shuttle.pdf",
+    "query": "Who is the service provider party in this agreement?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "CONSULTANT",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "CONSULTANT",
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "PROFESSIONAL SERVICES AGREEMENT THIS AGREEMENT made and entered into this _______day of , 20 by and between the SANTA CRUZ COUNTY REGIONAL TRANSPORTATION COMMISSION, hereinafter called COMMISSION, and ________ ____, hereinafter called CONSULTANT for __________________ (services/project name)."
+        },
+        {
+          "page": 7,
+          "snippet": "15. WORK PRODUCTS. All material, data, information, and written, graphic or other work produced under this Agreement is subject to the unqualified and unconditional right of the COMMISSION to use, reproduce, publish, display, and make derivative use of all such work, or any part of it, free of ch..."
+        },
+        {
+          "page": 7,
+          "snippet": "A. Upon completion of all work under this contract, ownership and title to all custom letters, reports, documents, plans, specifications, and estimates and other products produced as part of this Agreement (herein \"deliverables\") will automatically be vested in the COMMISSION; and no further agre..."
+        },
+        {
+          "page": 8,
+          "snippet": "18. DISPUTES. This Agreement shall be construed under the laws of the State of California. Pending final resolution of a dispute hereunder, CONSULTANT shall proceed diligently with the performance of this Agreement and shall comply with COMMISSION’s instructions."
+        },
+        {
+          "page": 9,
+          "snippet": "A. AGREEMENT: The two parties to this Agreement, who are the before named CONSULTANT and the before named COMMISSION, hereby agree that this Agreement constitutes the entire Agreement which is made and concluded in duplicate between the two parties. Both of these parties for and in consideration..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "CONSULTANT",
+      "pred": "CONSULTANT"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 13.5848
+  },
+  {
+    "case_id": 28,
+    "doc_name": "SampleContract-Shuttle.pdf",
+    "query": "How many days written notice can COMMISSION give for convenience termination?",
+    "output_type": "number",
+    "expected_found": true,
+    "expected": 30,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": 30,
+      "found": true,
+      "sources": [
+        {
+          "page": 2,
+          "snippet": "A. COMMISSION may terminate this Agreement for its convenience any time, in whole or part, by giving CONSULTANT thirty-day (30-day) written notice thereof. Within thirty days of the COMMISSION's receipt of CONSULTANT's final billing, COMMISSION shall pay CONSULTANT its allowable costs incurred to..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "number_exact",
+      "expected": 30,
+      "pred": 30
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 14.3069
+  },
+  {
+    "case_id": 29,
+    "doc_name": "SampleContract-Shuttle.pdf",
+    "query": "How many days advance notice must CONSULTANT give to terminate the agreement?",
+    "output_type": "number",
+    "expected_found": true,
+    "expected": 120,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": 120,
+      "found": true,
+      "sources": [
+        {
+          "page": 3,
+          "snippet": "C. CONSULTANT may terminate this Agreement by giving the COMMISSION at least one hundred and twenty (120) days advance written notice. CONSULTANT shall be liable for any and all reasonable costs incurred by COMMISSION as a result of such default, including but not limited to reprocurement costs o..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "number_exact",
+      "expected": 120,
+      "pred": 120
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 14.8585
+  },
+  {
+    "case_id": 30,
+    "doc_name": "SampleContract-Shuttle.pdf",
+    "query": "Within how many calendar days after performance of work must invoices be submitted?",
+    "output_type": "number",
+    "expected_found": true,
+    "expected": 45,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": 45,
+      "found": true,
+      "sources": [
+        {
+          "page": 2,
+          "snippet": "H. The CONSULTANT will be reimbursed after receipt by the COMMISSION’s Contract Manager of itemized invoices. Invoices shall be submitted no later than 45calendar days after the performance of work for which the CONSULTANT is billing. Invoices shall be mailed to the COMMISSION’s Contract Manager..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "number_exact",
+      "expected": 45,
+      "pred": 45
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 15.3476
   }
 ]
