@@ -4,7 +4,7 @@ This repository contains both parts of the HyperVerge AI Lead take-home assignme
 
 ## Repository structure
 
-* `assignment-1/` — Legal PDF QnA Agent
+* `assignment-1/` — PDF Data Extraction for Legal Documents
 * `assignment-2/` — OCR / notebook-based assignment work
 
 ---
