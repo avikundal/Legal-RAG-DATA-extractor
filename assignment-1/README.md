@@ -7,6 +7,8 @@ The system extracts **one field per call** from a legal PDF using:
 * a natural-language query
 * an expected output type
 * optional few-shot examples
+  
+Although it is optimized for legal Retrieval any kind of PDF can be uploaded.
 
 It returns structured JSON with:
 
