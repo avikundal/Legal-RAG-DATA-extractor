@@ -1,6 +1,6 @@
 # PDF Data Extraction for Legal Documents
 
-This project is a generic legal PDF extraction system built for the HyperVerge AI Lead take-home assignment.
+This is a Legal PDF QnA Agent built for the HyperVerge AI Lead take-home assignment.
 
 The system extracts **one field per call** from a legal PDF using:
 
