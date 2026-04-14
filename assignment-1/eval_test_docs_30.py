@@ -67,172 +67,104 @@ TESTS: List[Dict[str, Any]] = [
     },
 
     # ------------------------------------------------------------------
-    # CHETU-NDA_Consultant-India Avijit Kundal.pdf
+    # Contract document.pdf
     # ------------------------------------------------------------------
     {
-        "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
-        "query": "What is the company name?",
-        "output_type": OutputType.STRING,
-        "expected_found": True,
-        "match_type": "string_contains_any",
-        "expected_any": ["CHETU", "Chetu (I) Pvt. Ltd.", "CHETU (INDIA) PVT. LTD."],
-    },
-    {
-        "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
-        "query": "Who is the consultant?",
+        "doc_name": "Contract document.pdf",
+        "query": "What is the name of the institute?",
         "output_type": OutputType.STRING,
         "expected_found": True,
         "match_type": "string_contains",
-        "expected": "Avijit Kundal",
+        "expected": "Indian Institute of Technology Kanpur",
     },
     {
-        "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
-        "query": "What is the hourly compensation?",
+        "doc_name": "Contract document.pdf",
+        "query": "What is the security deposit amount?",
         "output_type": OutputType.NUMBER,
         "expected_found": True,
         "match_type": "number_exact",
-        "expected": 4000,
+        "expected": 500000,
     },
     {
-        "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
-        "query": "What is the non-disparagement duration?",
+        "doc_name": "Contract document.pdf",
+        "query": "When did the service provider commence the work?",
+        "output_type": OutputType.DATE,
+        "expected_found": True,
+        "match_type": "date_exact",
+        "expected": "2012-10-01",
+    },
+    {
+        "doc_name": "Contract document.pdf",
+        "query": "Which courts have jurisdiction under this agreement?",
         "output_type": OutputType.STRING,
         "expected_found": True,
         "match_type": "string_contains",
-        "expected": "2 years",
+        "expected": "Kanpur",
     },
     {
-        "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
-        "query": "What is the non-compete duration?",
+        "doc_name": "Contract document.pdf",
+        "query": "What is the empanelment period?",
         "output_type": OutputType.STRING,
         "expected_found": True,
-        "match_type": "string_contains_any",
-        "expected_any": ["five (5) years", "5 years"],
+        "match_type": "string_contains",
+        "expected": "2 (Two) years",
+        "input_mode": "bytes",
+    },
+
+    # ------------------------------------------------------------------
+    # Loan Documentation - Customer copy_KB251222XCOIZ.pdf
+    # ------------------------------------------------------------------
+    {
+        "doc_name": "Loan Documentation - Customer copy_KB251222XCOIZ.pdf",
+        "query": "What is the total loan amount?",
+        "output_type": OutputType.NUMBER,
+        "expected_found": True,
+        "match_type": "number_exact",
+        "expected": 27500,
+    },
+    {
+        "doc_name": "Loan Documentation - Customer copy_KB251222XCOIZ.pdf",
+        "query": "What is the annualized fixed rate of interest?",
+        "output_type": OutputType.NUMBER,
+        "expected_found": True,
+        "match_type": "number_exact",
+        "expected": 28,
+    },
+    {
+        "doc_name": "Loan Documentation - Customer copy_KB251222XCOIZ.pdf",
+        "query": "What is the loan term in months?",
+        "output_type": OutputType.NUMBER,
+        "expected_found": True,
+        "match_type": "number_exact",
+        "expected": 9,
+    },
+    {
+        "doc_name": "Loan Documentation - Customer copy_KB251222XCOIZ.pdf",
+        "query": "What is the net disbursed amount?",
+        "output_type": OutputType.NUMBER,
+        "expected_found": True,
+        "match_type": "number_exact",
+        "expected": 25414,
+    },
+    {
+        "doc_name": "Loan Documentation - Customer copy_KB251222XCOIZ.pdf",
+        "query": "What is the cooling-off period?",
+        "output_type": OutputType.STRING,
+        "expected_found": True,
+        "match_type": "string_contains",
+        "expected": "3 days",
         "examples": [
             {
                 "input": {
-                    "query": "What law governs this agreement?",
-                    "output_type": "string",
+                    "query": "What is the annualized fixed rate of interest?",
+                    "output_type": "number",
                 },
                 "output": {
-                    "value": "the substantive law of the State of Uttar Pradesh, India",
+                    "value": 28,
                     "found": True,
                 },
             }
         ],
-    },
-    {
-        "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
-        "query": "What is the renewal term?",
-        "output_type": OutputType.STRING,
-        "expected_found": False,
-        "match_type": "not_found",
-        "expected": None,
-    },
-
-    # ------------------------------------------------------------------
-    # Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf
-    # ------------------------------------------------------------------
-    {
-        "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
-        "query": "What position is being offered?",
-        "output_type": OutputType.STRING,
-        "expected_found": True,
-        "match_type": "string_contains",
-        "expected": "Senior AI Engineer",
-    },
-    {
-        "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
-        "query": "What is the company name?",
-        "output_type": OutputType.STRING,
-        "expected_found": True,
-        "match_type": "string_contains",
-        "expected": "Flying Flamingos India Private Limited",
-    },
-    {
-        "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
-        "query": "What is the proposed start date?",
-        "output_type": OutputType.DATE,
-        "expected_found": True,
-        "match_type": "date_exact",
-        "expected": "2024-08-13",
-        "input_mode": "bytes",
-    },
-    {
-        "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
-        "query": "What is the total CTC?",
-        "output_type": OutputType.NUMBER,
-        "expected_found": True,
-        "match_type": "number_exact",
-        "expected": 4000000,
-    },
-    {
-        "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
-        "query": "What is the fixed pay?",
-        "output_type": OutputType.NUMBER,
-        "expected_found": True,
-        "match_type": "number_exact",
-        "expected": 3800000,
-    },
-    {
-        "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
-        "query": "List the compensation headline components.",
-        "output_type": OutputType.ARRAY_STRING,
-        "expected_found": True,
-        "match_type": "array_string_subset",
-        "expected": ["Fixed Pay", "ESOPs", "Retention Bonus"],
-    },
-
-    # ------------------------------------------------------------------
-    # Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf
-    # ------------------------------------------------------------------
-    {
-        "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
-        "query": "What is the purpose of this plan?",
-        "output_type": OutputType.STRING,
-        "expected_found": True,
-        "match_type": "string_contains",
-        "expected": "capital stock ownership",
-    },
-    {
-        "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
-        "query": "Who administers the plan?",
-        "output_type": OutputType.STRING,
-        "expected_found": True,
-        "match_type": "string_contains_any",
-        "expected_any": ["Board", "Board of Directors"],
-    },
-    {
-        "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
-        "query": "Who can receive incentive stock options?",
-        "output_type": OutputType.STRING,
-        "expected_found": True,
-        "match_type": "string_contains",
-        "expected": "employees of the Company",
-    },
-    {
-        "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
-        "query": "What is the maximum term of an option under the plan?",
-        "output_type": OutputType.STRING,
-        "expected_found": True,
-        "match_type": "string_contains",
-        "expected": "ten years",
-    },
-    {
-        "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
-        "query": "What happens to options after voluntary termination?",
-        "output_type": OutputType.STRING,
-        "expected_found": True,
-        "match_type": "string_contains",
-        "expected": "90 days",
-    },
-    {
-        "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
-        "query": "What law governs this plan?",
-        "output_type": OutputType.STRING,
-        "expected_found": True,
-        "match_type": "string_contains",
-        "expected": "Delaware",
     },
 
     # ------------------------------------------------------------------
@@ -245,14 +177,6 @@ TESTS: List[Dict[str, Any]] = [
         "expected_found": True,
         "match_type": "string_exact",
         "expected": "920292623071050303",
-    },
-    {
-        "doc_name": "PolicySoftCopy_1105948950.pdf",
-        "query": "What is the insured's name?",
-        "output_type": OutputType.STRING,
-        "expected_found": True,
-        "match_type": "string_contains",
-        "expected": "AVIJIT KUNDAL",
     },
     {
         "doc_name": "PolicySoftCopy_1105948950.pdf",
@@ -280,17 +204,97 @@ TESTS: List[Dict[str, Any]] = [
     },
     {
         "doc_name": "PolicySoftCopy_1105948950.pdf",
-        "query": "What is the deductible amount?",
+        "query": "What is the nominee relationship?",
+        "output_type": OutputType.STRING,
+        "expected_found": True,
+        "match_type": "string_contains",
+        "expected": "Father",
+    },
+
+    # ------------------------------------------------------------------
+    # SampleContract-2.pdf
+    # ------------------------------------------------------------------
+    {
+        "doc_name": "SampleContract-2.pdf",
+        "query": "Who is the first party?",
+        "output_type": OutputType.STRING,
+        "expected_found": True,
+        "match_type": "string_contains",
+        "expected": "NGO/UN agency",
+    },
+    {
+        "doc_name": "SampleContract-2.pdf",
+        "query": "Who is the second party?",
+        "output_type": OutputType.STRING,
+        "expected_found": True,
+        "match_type": "string_contains",
+        "expected": "Company/agent",
+    },
+    {
+        "doc_name": "SampleContract-2.pdf",
+        "query": "How many days after distribution must the first party reimburse the second party in a hawala transaction?",
         "output_type": OutputType.NUMBER,
-        "expected_found": False,
-        "match_type": "not_found",
-        "expected": None,
+        "expected_found": True,
+        "match_type": "number_exact",
+        "expected": 3,
+    },
+    {
+        "doc_name": "SampleContract-2.pdf",
+        "query": "What is the commission for Sarmada?",
+        "output_type": OutputType.NUMBER,
+        "expected_found": True,
+        "match_type": "number_exact",
+        "expected": 0.6,
+    },
+
+    # ------------------------------------------------------------------
+    # SampleContract-Shuttle.pdf
+    # ------------------------------------------------------------------
+    {
+        "doc_name": "SampleContract-Shuttle.pdf",
+        "query": "Who is the client party in this agreement?",
+        "output_type": OutputType.STRING,
+        "expected_found": True,
+        "match_type": "string_contains",
+        "expected": "COMMISSION",
+    },
+    {
+        "doc_name": "SampleContract-Shuttle.pdf",
+        "query": "Who is the service provider party in this agreement?",
+        "output_type": OutputType.STRING,
+        "expected_found": True,
+        "match_type": "string_contains",
+        "expected": "CONSULTANT",
+    },
+    {
+        "doc_name": "SampleContract-Shuttle.pdf",
+        "query": "How many days written notice can COMMISSION give for convenience termination?",
+        "output_type": OutputType.NUMBER,
+        "expected_found": True,
+        "match_type": "number_exact",
+        "expected": 30,
+    },
+    {
+        "doc_name": "SampleContract-Shuttle.pdf",
+        "query": "How many days advance notice must CONSULTANT give to terminate the agreement?",
+        "output_type": OutputType.NUMBER,
+        "expected_found": True,
+        "match_type": "number_exact",
+        "expected": 120,
+    },
+    {
+        "doc_name": "SampleContract-Shuttle.pdf",
+        "query": "Within how many calendar days after performance of work must invoices be submitted?",
+        "output_type": OutputType.NUMBER,
+        "expected_found": True,
+        "match_type": "number_exact",
+        "expected": 45,
     },
 ]
 
-BASE_DIR = Path(__file__).resolve().parent
-DOC_ROOT = BASE_DIR / "test_docs"
-OUT_DIR = BASE_DIR / "test_logs" / "test_docs_30"
+
+DOC_ROOT = Path(__file__).resolve().parent / "test_docs"
+OUT_DIR = Path(__file__).resolve().parent / "test_logs" / "test_docs_30"
 DETAIL_JSON = OUT_DIR / "detailed_results.json"
 SUMMARY_JSON = OUT_DIR / "summary.json"
 DETAIL_CSV = OUT_DIR / "detailed_results.csv"
