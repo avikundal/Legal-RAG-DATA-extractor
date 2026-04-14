@@ -1,0 +1,1081 @@
+[
+  {
+    "case_id": 1,
+    "doc_name": "AI Lead Assignment - 1.pdf",
+    "query": "What is the title of this assignment?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "Take-Home Assignment - 1",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "Take-Home Assignment - 1",
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "Take-Home Assignment - 1 PDF Data Extraction for Legal Documents Duration"
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_exact",
+      "expected": "Take-Home Assignment - 1",
+      "pred": "Take-Home Assignment - 1"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 10.7337
+  },
+  {
+    "case_id": 2,
+    "doc_name": "AI Lead Assignment - 1.pdf",
+    "query": "What is the duration?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "1-2 Days",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "1-2 Days",
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "Take-Home Assignment - 1 PDF Data Extraction for Legal Documents Duration"
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "1-2 Days",
+      "pred": "1-2 Days"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 10.1651
+  },
+  {
+    "case_id": 3,
+    "doc_name": "AI Lead Assignment - 1.pdf",
+    "query": "What is the example output for the annual interest rate question?",
+    "output_type": "number",
+    "expected_found": true,
+    "expected": 5.25,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": 5.25,
+      "found": true,
+      "sources": [
+        {
+          "page": 4,
+          "snippet": "Query | Output Type | Example Output \"Who is the tenant?\" | string | \"Greenfield Properties LLC\" \"When does the lease start?\" | date | \"2024-03-15\" \"What is the annual interest rate?\" | number | 5.25 \"What is the non-compete duration?\" | string | \"18 months\" \"List all named parties in the agreeme..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "number_exact",
+      "expected": 5.25,
+      "pred": 5.25
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 10.1221
+  },
+  {
+    "case_id": 4,
+    "doc_name": "AI Lead Assignment - 1.pdf",
+    "query": "What is the example output for 'When does the lease start'?",
+    "output_type": "date",
+    "expected_found": true,
+    "expected": "2024-03-15",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "2024-03-15",
+      "found": true,
+      "sources": [
+        {
+          "page": 4,
+          "snippet": "Query | Output Type | Example Output \"Who is the tenant?\" | string | \"Greenfield Properties LLC\" \"When does the lease start?\" | date | \"2024-03-15\" \"What is the annual interest rate?\" | number | 5.25 \"What is the non-compete duration?\" | string | \"18 months\" \"List all named parties in the agreeme..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "date_exact",
+      "expected": "2024-03-15",
+      "pred": "2024-03-15"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 9.0362
+  },
+  {
+    "case_id": 5,
+    "doc_name": "AI Lead Assignment - 1.pdf",
+    "query": "What are the example values shown for array of numbers?",
+    "output_type": "array[number]",
+    "expected_found": true,
+    "expected": [
+      5.25,
+      3.5
+    ],
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": [
+        5.25,
+        3.5
+      ],
+      "found": true,
+      "sources": [
+        {
+          "page": 3,
+          "snippet": "Free-form text, names, clauses \"Acme Corp\" Date ISO-8601 date string Numeric values (integers or decimals) Multiple text values [\"Party A\", \"Party B\"] Array of Dates Multiple dates [\"2024-01-01\", \"2025-01-01\"] Array of Multiple numeric values [5.25, 3.50] The output schema should be kept simple a..."
+        },
+        {
+          "page": 3,
+          "snippet": "Type | Description | Example Value String | Free-form text, names, clauses | \"Acme Corp\" Date | ISO-8601 date string | \"2024-03-15\" Number | Numeric values (integers or decimals) | 5.25 Array of Strings | Multiple text values | [\"Party A\", \"Party B\"] Array of Dates | Multiple dates | [\"2024-01-01..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "array_number_exact",
+      "expected": [
+        5.25,
+        3.5
+      ],
+      "pred": [
+        5.25,
+        3.5
+      ]
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 8.9065
+  },
+  {
+    "case_id": 6,
+    "doc_name": "AI Lead Assignment - 1.pdf",
+    "query": "What is the repo URL to share the submission?",
+    "output_type": "string",
+    "expected_found": false,
+    "expected": null,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": null,
+      "found": false,
+      "sources": [],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "correct_not_found"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 8.8624
+  },
+  {
+    "case_id": 7,
+    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
+    "query": "What is the company name?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": null,
+    "expected_any": [
+      "CHETU",
+      "Chetu (I) Pvt. Ltd.",
+      "CHETU (INDIA) PVT. LTD."
+    ],
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "Chetu (I) Pvt. Ltd.",
+      "found": true,
+      "sources": [
+        {
+          "page": 6,
+          "snippet": "FULLY UNDERSTAND AND AGREE TO ALL OF ITS TERMS. Approved and Accepted by: Consultant: Chetu (I) Pvt. Ltd.: ______________________________ Name: __________ _______ Name: ________________ _______ Mr. Title: _____________ _______ Title: ________________________ Date: ______ Date:"
+        },
+        {
+          "page": 4,
+          "snippet": "Chetu (I) Pvt. Ltd. Information), including, without limitation, any designs, forms, formulas, materials, products, deliverables, work product, developmental or experimental work, computer software programs (including, without limitation, images, text, source code, object code, html code and scri..."
+        },
+        {
+          "page": 5,
+          "snippet": "Chetu (I) Pvt. Ltd. Agreement, the Company shall have the right, in addition to any other rights or remedies it may have: (a) to a temporary, preliminary or permanent injunction or injunctions and temporary restraining order or orders to prevent breaches of such provisions and to specifically enf..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains_any",
+      "expected_any": [
+        "CHETU",
+        "Chetu (I) Pvt. Ltd.",
+        "CHETU (INDIA) PVT. LTD."
+      ],
+      "pred": "Chetu (I) Pvt. Ltd."
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 11.7055
+  },
+  {
+    "case_id": 8,
+    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
+    "query": "Who is the consultant?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "Avijit Kundal",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "Avijit Kundal",
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "CHETU (INDIA) PVT. LTD., H-6, SECTOR-63, NOIDA-201301, UTTAR PRADESH (“Company”) AND me, Avijit Kundal(Dimple) PAN Number (______________________) also referred to as “Consultant”."
+        },
+        {
+          "page": 6,
+          "snippet": "Confidential v 12.29.16 _______________________________ [Signature] [Authorized Signatory] Avijit Kundal _ Consultant Initials _____ Company Initials: ______"
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "Avijit Kundal",
+      "pred": "Avijit Kundal"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 11.7637
+  },
+  {
+    "case_id": 9,
+    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
+    "query": "What is the hourly compensation?",
+    "output_type": "number",
+    "expected_found": true,
+    "expected": 4000,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": 4000,
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "2.COMPENSATION. For my Services, Company agrees to pay Consultant, the sum of Rs.4000/-per hour.Fixed actually worked. The Company shall not be obligated to provide a minimum number of hours of work nor shall Consultant be entitled to receive any compensation for hours not actually worked.0 The C..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "number_exact",
+      "expected": 4000,
+      "pred": 4000
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 12.6949
+  },
+  {
+    "case_id": 10,
+    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
+    "query": "What is the non-disparagement duration?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "2 years",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "2 years after termination",
+      "found": true,
+      "sources": [
+        {
+          "page": 3,
+          "snippet": "6.NON-DISPARAGMENT. While providing Services and for a period of 2 years after termination, I agree not to make any statement, written or verbal, or cause or encourage others to make any statement, written or verbal, that defame, disparage or in any way criticize the personal or business reputati..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "2 years",
+      "pred": "2 years after termination"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 11.965
+  },
+  {
+    "case_id": 11,
+    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
+    "query": "What is the non-compete duration?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": null,
+    "expected_any": [
+      "five (5) years",
+      "5 years"
+    ],
+    "input_mode": "path",
+    "used_examples": true,
+    "prediction": {
+      "value": "five (5) years",
+      "found": true,
+      "sources": [
+        {
+          "page": 3,
+          "snippet": "7.NON-COMPETE AND NON-SOLICIT. I acknowledge that other than for the sole purpose of benefiting the Company, I shall not, directly or indirectly or through another party: contact, work for, solicit or hire any of Company’s clients, Company’s clients’ personnel, vendors, partners, Company’s person..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains_any",
+      "expected_any": [
+        "five (5) years",
+        "5 years"
+      ],
+      "pred": "five (5) years"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 11.1598
+  },
+  {
+    "case_id": 12,
+    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
+    "query": "What is the renewal term?",
+    "output_type": "string",
+    "expected_found": false,
+    "expected": null,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": null,
+      "found": false,
+      "sources": [],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "correct_not_found"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 11.1298
+  },
+  {
+    "case_id": 13,
+    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
+    "query": "What position is being offered?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "Senior AI Engineer",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "Senior AI Engineer",
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "OFFER LETTER Date: 12 Aug, 2024 Dear Avijit Kundal, Congratulations & Welcome to Flamily! We are delighted to offer you a position of Senior AI Engineer with Flying Flamingos India Private Limited (Flam) at Bangalore, India. We feel that your skills and background will be valued assets to our org..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "Senior AI Engineer",
+      "pred": "Senior AI Engineer"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 14.317
+  },
+  {
+    "case_id": 14,
+    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
+    "query": "What is the company name?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "Flying Flamingos India Private Limited",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "Flying Flamingos India Private Limited",
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "2) General: The proposed start date of your employment at Flying Flamingos India Private Limited is 13th Aug 2024. The available CTC components along with limits have been detailed in Annexure 1B. Annexure 1A and the detailed \"Terms & Conditions of Employment\" in Annexure 2 together set forth the..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "Flying Flamingos India Private Limited",
+      "pred": "Flying Flamingos India Private Limited"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 15.1816
+  },
+  {
+    "case_id": 15,
+    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
+    "query": "What is the proposed start date?",
+    "output_type": "date",
+    "expected_found": true,
+    "expected": "2024-08-13",
+    "expected_any": null,
+    "input_mode": "bytes",
+    "used_examples": false,
+    "prediction": {
+      "value": "2024-08-13",
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "2) General: The proposed start date of your employment at Flying Flamingos India Private Limited is 13th Aug 2024. The available CTC components along with limits have been detailed in Annexure 1B. Annexure 1A and the detailed \"Terms & Conditions of Employment\" in Annexure 2 together set forth the..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "date_exact",
+      "expected": "2024-08-13",
+      "pred": "2024-08-13"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 13.7972
+  },
+  {
+    "case_id": 16,
+    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
+    "query": "What is the total CTC?",
+    "output_type": "number",
+    "expected_found": true,
+    "expected": 4000000,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": 4000000,
+      "found": true,
+      "sources": [
+        {
+          "page": 2,
+          "snippet": "200,000 Total CTC (I)"
+        },
+        {
+          "page": 2,
+          "snippet": "CTC(I) | 3,800,000 | 316,667 ContributiontotheEmployerPF | 21,600 | 1,800 Gross | 3,778,400 | 314,867 Earning BasicSalary | 1,889,200 | 157,433"
+        },
+        {
+          "page": 1,
+          "snippet": "1) Compensation: Your compensation on a Cost to Company (CTC) basis will be Rs.40,00,000/- (Forty Lakhs only) per annum and will be payable as under. Please refer to Annexure 1A for detailed breakup of your CTC. a) Fixed Pay: Rs. 38,00,000 Only per annum b) ESOPs : Rs. 5,00,000 Only c) Retention..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "number_exact",
+      "expected": 4000000,
+      "pred": 4000000
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 13.8245
+  },
+  {
+    "case_id": 17,
+    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
+    "query": "What is the fixed pay?",
+    "output_type": "number",
+    "expected_found": true,
+    "expected": 3800000,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": 3800000,
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "1) Compensation: Your compensation on a Cost to Company (CTC) basis will be Rs.40,00,000/- (Forty Lakhs only) per annum and will be payable as under. Please refer to Annexure 1A for detailed breakup of your CTC. a) Fixed Pay: Rs. 38,00,000 Only per annum b) ESOPs : Rs. 5,00,000 Only c) Retention..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "number_exact",
+      "expected": 3800000,
+      "pred": 3800000
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 13.4601
+  },
+  {
+    "case_id": 18,
+    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
+    "query": "List the compensation headline components.",
+    "output_type": "array[string]",
+    "expected_found": true,
+    "expected": [
+      "Fixed Pay",
+      "ESOPs",
+      "Retention Bonus"
+    ],
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": [
+        "Fixed Pay",
+        "ESOPs",
+        "Retention Bonus"
+      ],
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "1) Compensation: Your compensation on a Cost to Company (CTC) basis will be Rs.40,00,000/- (Forty Lakhs only) per annum and will be payable as under. Please refer to Annexure 1A for detailed breakup of your CTC. a) Fixed Pay: Rs. 38,00,000 Only per annum b) ESOPs : Rs. 5,00,000 Only c) Retention..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "array_string_subset",
+      "expected": [
+        "Fixed Pay",
+        "ESOPs",
+        "Retention Bonus"
+      ],
+      "pred": [
+        "Fixed Pay",
+        "ESOPs",
+        "Retention Bonus"
+      ]
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 11.277
+  },
+  {
+    "case_id": 19,
+    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
+    "query": "What is the purpose of this plan?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "capital stock ownership",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "The purpose of this plan (the “Plan”) is to secure for Flamingos Technologies Inc., a Delaware corporation (the “Company”) and its shareholders the benefits arising from capital stock ownership by employees, officers and directors of, and consultants or advisors to, the Company and its parent and subsidiary corporations who are expected to contribute to the Company’s future growth and success.",
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "1. Purpose. The purpose of this plan (the “Plan”) is to secure for Flamingos Technologies Inc., a Delaware corporation (the “Company”) and its shareholders the benefits arising from capital stock ownership by employees, officers and directors of, and consultants or advisors to, the Company and it..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "capital stock ownership",
+      "pred": "The purpose of this plan (the “Plan”) is to secure for Flamingos Technologies Inc., a Delaware corporation (the “Company”) and its shareholders the benefits arising from capital stock ownership by employees, officers and directors of, and consultants or advisors to, the Company and its parent and subsidiary corporations who are expected to contribute to the Company’s future growth and success."
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 13.0736
+  },
+  {
+    "case_id": 20,
+    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
+    "query": "Who administers the plan?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": null,
+    "expected_any": [
+      "Board",
+      "Board of Directors"
+    ],
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "Board of Directors",
+      "found": true,
+      "sources": [
+        {
+          "page": 2,
+          "snippet": "The Board may correct any defect or supply any omission or reconcile any inconsistency in the Plan or in any Restricted Stock Agreement or Option Agreement in the manner and to the extent it shall deem expedient to carry the Plan into effect and it shall be the sole and final judge of such expedi..."
+        },
+        {
+          "page": 1,
+          "snippet": "1. Purpose. The purpose of this plan (the “Plan”) is to secure for Flamingos Technologies Inc., a Delaware corporation (the “Company”) and its shareholders the benefits arising from capital stock ownership by employees, officers and directors of, and consultants or advisors to, the Company and it..."
+        },
+        {
+          "page": 2,
+          "snippet": "grant) of more than $100,000. If an Option is intended to be an Incentive Stock Option, and if for any reason such Option (or any portion thereof) shall not qualify as an Incentive Stock Option, then, to the extent of such nonqualification, such Option (or portion thereof) shall be regarded as a..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains_any",
+      "expected_any": [
+        "Board",
+        "Board of Directors"
+      ],
+      "pred": "Board of Directors"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 16.5541
+  },
+  {
+    "case_id": 21,
+    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
+    "query": "Who can receive incentive stock options?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "employees of the Company",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "employees of the Company",
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "1. Purpose. The purpose of this plan (the “Plan”) is to secure for Flamingos Technologies Inc., a Delaware corporation (the “Company”) and its shareholders the benefits arising from capital stock ownership by employees, officers and directors of, and consultants or advisors to, the Company and it..."
+        },
+        {
+          "page": 2,
+          "snippet": "The Board may correct any defect or supply any omission or reconcile any inconsistency in the Plan or in any Restricted Stock Agreement or Option Agreement in the manner and to the extent it shall deem expedient to carry the Plan into effect and it shall be the sole and final judge of such expedi..."
+        },
+        {
+          "page": 1,
+          "snippet": "The vesting of Options may be conditioned upon the completion of a specified period of employment with the Company and/or such other conditions or events as the Board may determine. The Board may also provide that Options are immediately exercisable subject to certain repurchase rights in the Com..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "employees of the Company",
+      "pred": "employees of the Company"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 15.9475
+  },
+  {
+    "case_id": 22,
+    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
+    "query": "What is the maximum term of an option under the plan?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "ten years",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "ten years",
+      "found": true,
+      "sources": [
+        {
+          "page": 5,
+          "snippet": "Option Period. Notwithstanding any other provision of the Plan or any Option Agreement, each Option and all rights thereunder shall expire on the date specified in the applicable Option Agreement, provided that such date shall not be later than ten years after the date on which the Option is gran..."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "ten years",
+      "pred": "ten years"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 13.949
+  },
+  {
+    "case_id": 23,
+    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
+    "query": "What happens to options after voluntary termination?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "90 days",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "Options terminate 90 days after the date of voluntary termination of the optionee’s employment with, or provision of services to, the Company by the optionee (other than for death or permanent disability). Until the date on which the Option so expires, the optionee may exercise that portion of his or her Option which is exercisable at the time of termination of the employment or service relationship.",
+      "found": true,
+      "sources": [
+        {
+          "page": 6,
+          "snippet": "90 days after the date of voluntary termination of the optionee’s employment with, or provision of services to, the Company by the optionee (other than for death or permanent disability as defined below); or (iv)"
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "90 days",
+      "pred": "Options terminate 90 days after the date of voluntary termination of the optionee’s employment with, or provision of services to, the Company by the optionee (other than for death or permanent disability). Until the date on which the Option so expires, the optionee may exercise that portion of his or her Option which is exercisable at the time of termination of the employment or service relationship."
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 14.4525
+  },
+  {
+    "case_id": 24,
+    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
+    "query": "What law governs this plan?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "Delaware",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "the laws of Delaware",
+      "found": true,
+      "sources": [
+        {
+          "page": 13,
+          "snippet": "25. Governing Law. This Plan and each Option or Restricted Stock Award shall be governed by the laws of Delaware, without regard to its principles of conflicts of law."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "Delaware",
+      "pred": "the laws of Delaware"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 13.9178
+  },
+  {
+    "case_id": 25,
+    "doc_name": "PolicySoftCopy_1105948950.pdf",
+    "query": "What is the policy number?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "920292623071050303",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "920292623071050303",
+      "found": true,
+      "sources": [
+        {
+          "page": 4,
+          "snippet": "4) Geographical Area of operation: INDIA. Type of Cover: Compulsory PA Cover - Motor For Office Use Only Policy Number"
+        },
+        {
+          "page": 1,
+          "snippet": "Compulsory Personal Accident (Owner Driver) under Motor Insurance Policies Policy Schedule Important: 1) The validity of this certificate of Insurance cum policy is subject to realization by the company of the premium cheque paid by the Insured Policy Number: 920292623071050303 Proposal/Cover not..."
+        },
+        {
+          "page": 4,
+          "snippet": "For Office Use Only Policy Number | 920292623071050303 | Date | 05/04/2026 00:00 Sourcing Reference No. | Inspection Lead No."
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_exact",
+      "expected": "920292623071050303",
+      "pred": "920292623071050303"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 16.7763
+  },
+  {
+    "case_id": 26,
+    "doc_name": "PolicySoftCopy_1105948950.pdf",
+    "query": "What is the insured's name?",
+    "output_type": "string",
+    "expected_found": true,
+    "expected": "AVIJIT KUNDAL",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "AVIJIT KUNDAL",
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "Compulsory Personal Accident (Owner Driver) under Motor Insurance Policies Policy Schedule Important: 1) The validity of this certificate of Insurance cum policy is subject to realization by the company of the premium cheque paid by the Insured Policy Number: 920292623071050303 Proposal/Cover not..."
+        },
+        {
+          "page": 4,
+          "snippet": "2a. Proposer's Full Name | Mr Mrs. Ms. AVIJIT KUNDAL"
+        },
+        {
+          "page": 5,
+          "snippet": "17. Personal Accident cover for Owner-Driver. Please give details of nomination. Name | AVIJIT KUNDAL Name of Nominee | ROOP CHAND Age of Nominee | 68 Name of Appointee Relationship | Father Address Note:"
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "string_contains",
+      "expected": "AVIJIT KUNDAL",
+      "pred": "AVIJIT KUNDAL"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 29.0067
+  },
+  {
+    "case_id": 27,
+    "doc_name": "PolicySoftCopy_1105948950.pdf",
+    "query": "What is the policy start date?",
+    "output_type": "date",
+    "expected_found": true,
+    "expected": "2026-04-05",
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": "2026-04-05",
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "NA Policy Detail Policy Period Start Date:05/04/2026 00:00 End Date : 04/04/2027 23:59 Renewable Date :05/04/2027 Nominee Details Name :"
+        },
+        {
+          "page": 5,
+          "snippet": "12. Period of Insurance | From 00:00 Hrs of 05/04/2026 00:00 To Mid Night of"
+        },
+        {
+          "page": 4,
+          "snippet": "05/04/2026 00:00 Sourcing Reference No. Inspection Lead No. Intermediary Details (Office Use Only) Intermediary Name Policybazaar Insurance Brokers Code"
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "date_exact",
+      "expected": "2026-04-05",
+      "pred": "2026-04-05"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 18.1767
+  },
+  {
+    "case_id": 28,
+    "doc_name": "PolicySoftCopy_1105948950.pdf",
+    "query": "What is the total premium payable?",
+    "output_type": "number",
+    "expected_found": true,
+    "expected": 443,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": 443,
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "TOTAL PREMIUM PAYABLE (₹) | 443"
+        },
+        {
+          "page": 1,
+          "snippet": "TOTAL PREMIUM PAYABLE (₹)"
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "number_exact",
+      "expected": 443,
+      "pred": 443
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 18.7458
+  },
+  {
+    "case_id": 29,
+    "doc_name": "PolicySoftCopy_1105948950.pdf",
+    "query": "List the policy period dates.",
+    "output_type": "array[date]",
+    "expected_found": true,
+    "expected": [
+      "2026-04-05",
+      "2027-04-04"
+    ],
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": [
+        "2026-04-05",
+        "2027-04-04"
+      ],
+      "found": true,
+      "sources": [
+        {
+          "page": 1,
+          "snippet": "AVIJIT KUNDAL Period of Insurance: From 00:00 Hrs on 05/04/2026 00:00 to 23:59 Hrs of 04/04/2027 23:59 Communication Address: G34, F Block, SLS SUMMERFIELDS, AECS MOHALI,Karnataka-560068 Transaction ID:PB158631461 Mobile No: 9877348779 Policy issuing branch: 6th Floor, Oberoi Commerz, Oberoi Gard..."
+        },
+        {
+          "page": 1,
+          "snippet": "Policy Number: 920292623071050303 | Proposal/Cover note No: PB84405CPA1005420187 Insured's Name: AVIJIT KUNDAL | Period of Insurance: From 00:00 Hrs on 05/04/2026 00:00 to 23:59 Hrs of 04/04/2027 23:59 Communication Address: G34, F Block, SLS SUMMERFIELDS, AECS Layout Singasandra MOHALI,Karnataka..."
+        },
+        {
+          "page": 5,
+          "snippet": "12. Period of Insurance From 00:00 Hrs of 05/04/2026 00:00 To Mid Night of"
+        },
+        {
+          "page": 5,
+          "snippet": "16. Are you an existing IndusInd General Insurance (Formerly Reliance General Insurance) customer: If Yes Please provide, Policy Number __________________________________________"
+        }
+      ],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "array_date_exact",
+      "expected": [
+        "2026-04-05",
+        "2027-04-04"
+      ],
+      "pred": [
+        "2026-04-05",
+        "2027-04-04"
+      ]
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 18.392
+  },
+  {
+    "case_id": 30,
+    "doc_name": "PolicySoftCopy_1105948950.pdf",
+    "query": "What is the deductible amount?",
+    "output_type": "number",
+    "expected_found": false,
+    "expected": null,
+    "expected_any": null,
+    "input_mode": "path",
+    "used_examples": false,
+    "prediction": {
+      "value": null,
+      "found": false,
+      "sources": [],
+      "error": null
+    },
+    "match_pass": true,
+    "match_info": {
+      "reason": "correct_not_found"
+    },
+    "found_match": true,
+    "type_valid": true,
+    "source_valid": true,
+    "latency_sec": 22.0816
+  }
+]

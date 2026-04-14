@@ -1,0 +1,31 @@
+case_id,doc_name,query,output_type,expected_found,input_mode,used_examples,match_pass,found_match,type_valid,source_valid,latency_sec
+1,AI Lead Assignment - 1.pdf,What is the title of this assignment?,string,True,path,False,True,True,True,True,10.7337
+2,AI Lead Assignment - 1.pdf,What is the duration?,string,True,path,False,True,True,True,True,10.1651
+3,AI Lead Assignment - 1.pdf,What is the example output for the annual interest rate question?,number,True,path,False,True,True,True,True,10.1221
+4,AI Lead Assignment - 1.pdf,What is the example output for 'When does the lease start'?,date,True,path,False,True,True,True,True,9.0362
+5,AI Lead Assignment - 1.pdf,What are the example values shown for array of numbers?,array[number],True,path,False,True,True,True,True,8.9065
+6,AI Lead Assignment - 1.pdf,What is the repo URL to share the submission?,string,False,path,False,True,True,True,True,8.8624
+7,CHETU-NDA_Consultant-India Avijit Kundal.pdf,What is the company name?,string,True,path,False,True,True,True,True,11.7055
+8,CHETU-NDA_Consultant-India Avijit Kundal.pdf,Who is the consultant?,string,True,path,False,True,True,True,True,11.7637
+9,CHETU-NDA_Consultant-India Avijit Kundal.pdf,What is the hourly compensation?,number,True,path,False,True,True,True,True,12.6949
+10,CHETU-NDA_Consultant-India Avijit Kundal.pdf,What is the non-disparagement duration?,string,True,path,False,True,True,True,True,11.965
+11,CHETU-NDA_Consultant-India Avijit Kundal.pdf,What is the non-compete duration?,string,True,path,True,True,True,True,True,11.1598
+12,CHETU-NDA_Consultant-India Avijit Kundal.pdf,What is the renewal term?,string,False,path,False,True,True,True,True,11.1298
+13,Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf,What position is being offered?,string,True,path,False,True,True,True,True,14.317
+14,Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf,What is the company name?,string,True,path,False,True,True,True,True,15.1816
+15,Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf,What is the proposed start date?,date,True,bytes,False,True,True,True,True,13.7972
+16,Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf,What is the total CTC?,number,True,path,False,True,True,True,True,13.8245
+17,Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf,What is the fixed pay?,number,True,path,False,True,True,True,True,13.4601
+18,Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf,List the compensation headline components.,array[string],True,path,False,True,True,True,True,11.277
+19,Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf,What is the purpose of this plan?,string,True,path,False,True,True,True,True,13.0736
+20,Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf,Who administers the plan?,string,True,path,False,True,True,True,True,16.5541
+21,Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf,Who can receive incentive stock options?,string,True,path,False,True,True,True,True,15.9475
+22,Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf,What is the maximum term of an option under the plan?,string,True,path,False,True,True,True,True,13.949
+23,Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf,What happens to options after voluntary termination?,string,True,path,False,True,True,True,True,14.4525
+24,Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf,What law governs this plan?,string,True,path,False,True,True,True,True,13.9178
+25,PolicySoftCopy_1105948950.pdf,What is the policy number?,string,True,path,False,True,True,True,True,16.7763
+26,PolicySoftCopy_1105948950.pdf,What is the insured's name?,string,True,path,False,True,True,True,True,29.0067
+27,PolicySoftCopy_1105948950.pdf,What is the policy start date?,date,True,path,False,True,True,True,True,18.1767
+28,PolicySoftCopy_1105948950.pdf,What is the total premium payable?,number,True,path,False,True,True,True,True,18.7458
+29,PolicySoftCopy_1105948950.pdf,List the policy period dates.,array[date],True,path,False,True,True,True,True,18.392
+30,PolicySoftCopy_1105948950.pdf,What is the deductible amount?,number,False,path,False,True,True,True,True,22.0816

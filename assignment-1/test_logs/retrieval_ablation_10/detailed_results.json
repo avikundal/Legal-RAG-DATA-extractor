@@ -1,0 +1,2180 @@
+[
+  {
+    "case_id": 1,
+    "mode": "bm25_only",
+    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
+    "query": "After I stop working, for how many years can I not work with their clients?",
+    "note": "Natural paraphrase for non-compete duration",
+    "expected_any": [
+      "five (5) years",
+      "5 years after the Services terminate",
+      "for five (5) years after the Services terminate"
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 1,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p3_c3",
+        "page": 3,
+        "section_hint": "7.NON-COMPETE AND NON-SOLICIT. I acknowledge that other than for the",
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 0.9932034712475962,
+        "hit": true,
+        "snippet": "7.NON-COMPETE AND NON-SOLICIT. I acknowledge that other than for the sole purpose of benefiting the Company, I shall not, directly or indirectly or through another party: contact, work for, solicit or hire any of Company’s clients, Company’s clients’ personnel..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p3_c2",
+        "page": 3,
+        "section_hint": "6.NON-DISPARAGMENT. While providing Services and for a period of 2",
+        "combined_score": 0.5570034139031895,
+        "bm25_score": 0.5570034139031895,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "6.NON-DISPARAGMENT. While providing Services and for a period of 2 years after termination, I agree not to make any statement, written or verbal, or cause or encourage others to make any statement, written or verbal, that defame, disparage or in any way critic..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p1_c5",
+        "page": 1,
+        "section_hint": "4.QUALITY EXPECTATIONS: - I will be responsible for quality and on-time",
+        "combined_score": 0.44471744064573715,
+        "bm25_score": 0.44471744064573715,
+        "semantic_score": 0.33551054953532133,
+        "hit": false,
+        "snippet": "4.QUALITY EXPECTATIONS: - I will be responsible for quality and on-time delivery of my Services. Company will work closely with me to determine and establish time and quality milestones and deliverables. Should I fail to provide high quality and timely Service..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p3_c6",
+        "page": 3,
+        "section_hint": "10.WORKS BELONG TO COMPANY. I acknowledge that all original works of",
+        "combined_score": 0.4058487863732175,
+        "bm25_score": 0.4058487863732175,
+        "semantic_score": 0.6012098972130575,
+        "hit": false,
+        "snippet": "10.WORKS BELONG TO COMPANY. I acknowledge that all original works of authorship which are created, conceived, developed or reduced to practice by me or under my direction (solely or jointly with others) while performing Services that relate to the present or a..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p4_c1",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 0.3562185543261924,
+        "bm25_score": 0.3562185543261924,
+        "semantic_score": 0.3969968059308771,
+        "hit": false,
+        "snippet": "Chetu (I) Pvt. Ltd. Information), including, without limitation, any designs, forms, formulas, materials, products, deliverables, work product, developmental or experimental work, computer software programs (including, without limitation, images, text, source..."
+      }
+    ]
+  },
+  {
+    "case_id": 1,
+    "mode": "semantic_only",
+    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
+    "query": "After I stop working, for how many years can I not work with their clients?",
+    "note": "Natural paraphrase for non-compete duration",
+    "expected_any": [
+      "five (5) years",
+      "5 years after the Services terminate",
+      "for five (5) years after the Services terminate"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 2,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p3_c2",
+        "page": 3,
+        "section_hint": "6.NON-DISPARAGMENT. While providing Services and for a period of 2",
+        "combined_score": 1.0,
+        "bm25_score": 0.5570034139031895,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "6.NON-DISPARAGMENT. While providing Services and for a period of 2 years after termination, I agree not to make any statement, written or verbal, or cause or encourage others to make any statement, written or verbal, that defame, disparage or in any way critic..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p3_c3",
+        "page": 3,
+        "section_hint": "7.NON-COMPETE AND NON-SOLICIT. I acknowledge that other than for the",
+        "combined_score": 0.9932034712475962,
+        "bm25_score": 1.0,
+        "semantic_score": 0.9932034712475962,
+        "hit": true,
+        "snippet": "7.NON-COMPETE AND NON-SOLICIT. I acknowledge that other than for the sole purpose of benefiting the Company, I shall not, directly or indirectly or through another party: contact, work for, solicit or hire any of Company’s clients, Company’s clients’ personnel..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p3_c4",
+        "page": 3,
+        "section_hint": "8.RETURN OF PROPERTY. Upon the termination of my Services or at any",
+        "combined_score": 0.7430859783027753,
+        "bm25_score": 0.16337450566932105,
+        "semantic_score": 0.7430859783027753,
+        "hit": false,
+        "snippet": "8.RETURN OF PROPERTY. Upon the termination of my Services or at any other time upon the request of the Company, I (or my heirs or personal representatives) (a) shall deliver to the Company all Company property and documents, including without limitation, equip..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p3_c6",
+        "page": 3,
+        "section_hint": "10.WORKS BELONG TO COMPANY. I acknowledge that all original works of",
+        "combined_score": 0.6012098972130575,
+        "bm25_score": 0.4058487863732175,
+        "semantic_score": 0.6012098972130575,
+        "hit": false,
+        "snippet": "10.WORKS BELONG TO COMPANY. I acknowledge that all original works of authorship which are created, conceived, developed or reduced to practice by me or under my direction (solely or jointly with others) while performing Services that relate to the present or a..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p3_c5",
+        "page": 3,
+        "section_hint": "9.ABSENCE OF PRIOR AGREEMENTS. I represent that my entering into this",
+        "combined_score": 0.5992903901213957,
+        "bm25_score": 0.27819801093091523,
+        "semantic_score": 0.5992903901213957,
+        "hit": false,
+        "snippet": "9.ABSENCE OF PRIOR AGREEMENTS. I represent that my entering into this Agreement with Company does not constitute a breach of any past or present contract, agreement or understanding and I am free to execute this Agreement and its terms and to provide Services..."
+      }
+    ]
+  },
+  {
+    "case_id": 1,
+    "mode": "hybrid",
+    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
+    "query": "After I stop working, for how many years can I not work with their clients?",
+    "note": "Natural paraphrase for non-compete duration",
+    "expected_any": [
+      "five (5) years",
+      "5 years after the Services terminate",
+      "for five (5) years after the Services terminate"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 2,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p3_c2",
+        "page": 3,
+        "section_hint": "6.NON-DISPARAGMENT. While providing Services and for a period of 2",
+        "combined_score": 1.175,
+        "bm25_score": 0.5570034139031895,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "6.NON-DISPARAGMENT. While providing Services and for a period of 2 years after termination, I agree not to make any statement, written or verbal, or cause or encourage others to make any statement, written or verbal, that defame, disparage or in any way critic..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p3_c3",
+        "page": 3,
+        "section_hint": "7.NON-COMPETE AND NON-SOLICIT. I acknowledge that other than for the",
+        "combined_score": 0.85,
+        "bm25_score": 1.0,
+        "semantic_score": 0.9932034712475962,
+        "hit": true,
+        "snippet": "7.NON-COMPETE AND NON-SOLICIT. I acknowledge that other than for the sole purpose of benefiting the Company, I shall not, directly or indirectly or through another party: contact, work for, solicit or hire any of Company’s clients, Company’s clients’ personnel..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p3_c4",
+        "page": 3,
+        "section_hint": "8.RETURN OF PROPERTY. Upon the termination of my Services or at any",
+        "combined_score": 0.3333333333333333,
+        "bm25_score": 0.16337450566932105,
+        "semantic_score": 0.7430859783027753,
+        "hit": false,
+        "snippet": "8.RETURN OF PROPERTY. Upon the termination of my Services or at any other time upon the request of the Company, I (or my heirs or personal representatives) (a) shall deliver to the Company all Company property and documents, including without limitation, equip..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p3_c6",
+        "page": 3,
+        "section_hint": "10.WORKS BELONG TO COMPANY. I acknowledge that all original works of",
+        "combined_score": 0.25,
+        "bm25_score": 0.4058487863732175,
+        "semantic_score": 0.6012098972130575,
+        "hit": false,
+        "snippet": "10.WORKS BELONG TO COMPANY. I acknowledge that all original works of authorship which are created, conceived, developed or reduced to practice by me or under my direction (solely or jointly with others) while performing Services that relate to the present or a..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p3_c5",
+        "page": 3,
+        "section_hint": "9.ABSENCE OF PRIOR AGREEMENTS. I represent that my entering into this",
+        "combined_score": 0.2,
+        "bm25_score": 0.27819801093091523,
+        "semantic_score": 0.5992903901213957,
+        "hit": false,
+        "snippet": "9.ABSENCE OF PRIOR AGREEMENTS. I represent that my entering into this Agreement with Company does not constitute a breach of any past or present contract, agreement or understanding and I am free to execute this Agreement and its terms and to provide Services..."
+      }
+    ]
+  },
+  {
+    "case_id": 2,
+    "mode": "bm25_only",
+    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
+    "query": "If I say something bad about the company after leaving, how long does that clause still apply?",
+    "note": "Natural paraphrase for non-disparagement duration",
+    "expected_any": [
+      "2 years after termination",
+      "2 years"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hit_at_5": false,
+    "first_hit_rank": null,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p3_c3",
+        "page": 3,
+        "section_hint": "7.NON-COMPETE AND NON-SOLICIT. I acknowledge that other than for the",
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 0.7169937328299797,
+        "hit": false,
+        "snippet": "7.NON-COMPETE AND NON-SOLICIT. I acknowledge that other than for the sole purpose of benefiting the Company, I shall not, directly or indirectly or through another party: contact, work for, solicit or hire any of Company’s clients, Company’s clients’ personnel..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p5_c5",
+        "page": 5,
+        "section_hint": "16.REMEDIES. I understand that if I violate any provision of this",
+        "combined_score": 0.9348616087685144,
+        "bm25_score": 0.9348616087685144,
+        "semantic_score": 0.6066084732125265,
+        "hit": false,
+        "snippet": "16.REMEDIES. I understand that if I violate any provision of this agreement relating to Confidential Information, to Works or to my duty to cooperate in matters relating to protection of intellectual property, Company will suffer immediate and irreparable inju..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p3_c5",
+        "page": 3,
+        "section_hint": "9.ABSENCE OF PRIOR AGREEMENTS. I represent that my entering into this",
+        "combined_score": 0.7838650810612775,
+        "bm25_score": 0.7838650810612775,
+        "semantic_score": 0.5230593356848385,
+        "hit": false,
+        "snippet": "9.ABSENCE OF PRIOR AGREEMENTS. I represent that my entering into this Agreement with Company does not constitute a breach of any past or present contract, agreement or understanding and I am free to execute this Agreement and its terms and to provide Services..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p2_c1",
+        "page": 2,
+        "section_hint": null,
+        "combined_score": 0.7262373333129037,
+        "bm25_score": 0.7262373333129037,
+        "semantic_score": 0.44047512595643207,
+        "hit": false,
+        "snippet": "Chetu (I) Pvt. Ltd. I agree that I will not at any time without the prior written consent of the Company (whether during the term of my Services or at any time thereafter) utilize such Confidential Information for my own benefit, for the benefit of any third p..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p2_c2",
+        "page": 2,
+        "section_hint": null,
+        "combined_score": 0.6881541755439342,
+        "bm25_score": 0.6881541755439342,
+        "semantic_score": 0.38193164734394697,
+        "hit": false,
+        "snippet": "For purposes of this Agreement, the term “Confidential Information” shall mean any confidential, proprietary or non-public information, whether written or oral, tangible or intangible, of or concerning the Company, its parents, subsidiaries and affiliates and..."
+      }
+    ]
+  },
+  {
+    "case_id": 2,
+    "mode": "semantic_only",
+    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
+    "query": "If I say something bad about the company after leaving, how long does that clause still apply?",
+    "note": "Natural paraphrase for non-disparagement duration",
+    "expected_any": [
+      "2 years after termination",
+      "2 years"
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 1,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p3_c2",
+        "page": 3,
+        "section_hint": "6.NON-DISPARAGMENT. While providing Services and for a period of 2",
+        "combined_score": 1.0,
+        "bm25_score": 0.4738665720481807,
+        "semantic_score": 1.0,
+        "hit": true,
+        "snippet": "6.NON-DISPARAGMENT. While providing Services and for a period of 2 years after termination, I agree not to make any statement, written or verbal, or cause or encourage others to make any statement, written or verbal, that defame, disparage or in any way critic..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p5_c2",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.7290200485246217,
+        "bm25_score": 0.6366811892454427,
+        "semantic_score": 0.7290200485246217,
+        "hit": false,
+        "snippet": "If any covenant contained in this Agreement is held to be unenforceable by reason of the time, scope or geographic area covered thereby, such covenant shall be interpreted to extend to the maximum time, scope or geographic area for which it may be enforced as..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p3_c3",
+        "page": 3,
+        "section_hint": "7.NON-COMPETE AND NON-SOLICIT. I acknowledge that other than for the",
+        "combined_score": 0.7169937328299797,
+        "bm25_score": 1.0,
+        "semantic_score": 0.7169937328299797,
+        "hit": false,
+        "snippet": "7.NON-COMPETE AND NON-SOLICIT. I acknowledge that other than for the sole purpose of benefiting the Company, I shall not, directly or indirectly or through another party: contact, work for, solicit or hire any of Company’s clients, Company’s clients’ personnel..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p3_c4",
+        "page": 3,
+        "section_hint": "8.RETURN OF PROPERTY. Upon the termination of my Services or at any",
+        "combined_score": 0.6643826242935365,
+        "bm25_score": 0.382059748181737,
+        "semantic_score": 0.6643826242935365,
+        "hit": false,
+        "snippet": "8.RETURN OF PROPERTY. Upon the termination of my Services or at any other time upon the request of the Company, I (or my heirs or personal representatives) (a) shall deliver to the Company all Company property and documents, including without limitation, equip..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p2_c3",
+        "page": 2,
+        "section_hint": null,
+        "combined_score": 0.6605785594450919,
+        "bm25_score": 0.6215825800981938,
+        "semantic_score": 0.6605785594450919,
+        "hit": false,
+        "snippet": "The Company acknowledges that for purposes of this Agreement, the term “Confidential Information” shall not include information which (a) was demonstrably known to me prior to the date of this Agreement with the Company, (b) is learned by me from a third party..."
+      }
+    ]
+  },
+  {
+    "case_id": 2,
+    "mode": "hybrid",
+    "doc_name": "CHETU-NDA_Consultant-India Avijit Kundal.pdf",
+    "query": "If I say something bad about the company after leaving, how long does that clause still apply?",
+    "note": "Natural paraphrase for non-disparagement duration",
+    "expected_any": [
+      "2 years after termination",
+      "2 years"
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 1,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p3_c2",
+        "page": 3,
+        "section_hint": "6.NON-DISPARAGMENT. While providing Services and for a period of 2",
+        "combined_score": 1.0,
+        "bm25_score": 0.4738665720481807,
+        "semantic_score": 1.0,
+        "hit": true,
+        "snippet": "6.NON-DISPARAGMENT. While providing Services and for a period of 2 years after termination, I agree not to make any statement, written or verbal, or cause or encourage others to make any statement, written or verbal, that defame, disparage or in any way critic..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p5_c2",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.5,
+        "bm25_score": 0.6366811892454427,
+        "semantic_score": 0.7290200485246217,
+        "hit": false,
+        "snippet": "If any covenant contained in this Agreement is held to be unenforceable by reason of the time, scope or geographic area covered thereby, such covenant shall be interpreted to extend to the maximum time, scope or geographic area for which it may be enforced as..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p3_c3",
+        "page": 3,
+        "section_hint": "7.NON-COMPETE AND NON-SOLICIT. I acknowledge that other than for the",
+        "combined_score": 0.6833333333333333,
+        "bm25_score": 1.0,
+        "semantic_score": 0.7169937328299797,
+        "hit": false,
+        "snippet": "7.NON-COMPETE AND NON-SOLICIT. I acknowledge that other than for the sole purpose of benefiting the Company, I shall not, directly or indirectly or through another party: contact, work for, solicit or hire any of Company’s clients, Company’s clients’ personnel..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p3_c4",
+        "page": 3,
+        "section_hint": "8.RETURN OF PROPERTY. Upon the termination of my Services or at any",
+        "combined_score": 0.25,
+        "bm25_score": 0.382059748181737,
+        "semantic_score": 0.6643826242935365,
+        "hit": false,
+        "snippet": "8.RETURN OF PROPERTY. Upon the termination of my Services or at any other time upon the request of the Company, I (or my heirs or personal representatives) (a) shall deliver to the Company all Company property and documents, including without limitation, equip..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p2_c3",
+        "page": 2,
+        "section_hint": null,
+        "combined_score": 0.2,
+        "bm25_score": 0.6215825800981938,
+        "semantic_score": 0.6605785594450919,
+        "hit": false,
+        "snippet": "The Company acknowledges that for purposes of this Agreement, the term “Confidential Information” shall not include information which (a) was demonstrably known to me prior to the date of this Agreement with the Company, (b) is learned by me from a third party..."
+      }
+    ]
+  },
+  {
+    "case_id": 3,
+    "mode": "bm25_only",
+    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
+    "query": "When am I supposed to join the company?",
+    "note": "Natural start-date query",
+    "expected_any": [
+      "13th Aug 2024",
+      "2024-08-13"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hit_at_5": true,
+    "first_hit_rank": 4,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p6_c4",
+        "page": 6,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 0.6009247110057138,
+        "hit": false,
+        "snippet": "You also agree that your digital record including references, testimonials and verification reports on such agency platform will only be available to any other users of the platform if/when you provide your explicit consent for the same. You have also understo..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p5_c9",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.9112643224537712,
+        "bm25_score": 0.9112643224537712,
+        "semantic_score": 0.4498937360154254,
+        "hit": false,
+        "snippet": "G. Suspension: You may be placed under suspension, without salary, pending enquiry into the charges of misconduct or otherwise. The salary for the suspension period will be paid to you only when you are found not guilty of any of the charges for which you were..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p5_c6",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.8609954325438771,
+        "bm25_score": 0.8609954325438771,
+        "semantic_score": 0.5063620064160554,
+        "hit": false,
+        "snippet": "i. Return to work within 5 days from the commencement of such absence, and ii. Give an explanation to the satisfaction of the Management regarding such absence"
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p1_c1",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 0.7730327969492119,
+        "bm25_score": 0.7730327969492119,
+        "semantic_score": 0.6450375448401311,
+        "hit": true,
+        "snippet": "Docusign Envelope ID: 2581ED32-E72F-4824-9936-0D0466E8A972 OFFER LETTER Date: 12 Aug, 2024 Dear Avijit Kundal, Congratulations & Welcome to Flamily! We are delighted to offer you a position of Senior AI Engineer with Flying Flamingos India Private Limited (Fla..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p6_c3",
+        "page": 6,
+        "section_hint": null,
+        "combined_score": 0.7157766532253349,
+        "bm25_score": 0.7157766532253349,
+        "semantic_score": 0.6153127970651784,
+        "hit": false,
+        "snippet": "I. Recovery of Payments: Payments / reimbursements made towards recovery of notice period by your previous employer and relocation expenses by us will be recovered in full in the event of your separation from the company before completion of one year of joinin..."
+      }
+    ]
+  },
+  {
+    "case_id": 3,
+    "mode": "semantic_only",
+    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
+    "query": "When am I supposed to join the company?",
+    "note": "Natural start-date query",
+    "expected_any": [
+      "13th Aug 2024",
+      "2024-08-13"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hit_at_5": false,
+    "first_hit_rank": null,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p4_c2",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 0.598225077864851,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "A. Exclusivity: You agree to perform your duties, responsibilities and obligations efficiently and to the best of your ability. You agree that you will devote all of your working time, care and attention and best efforts to such duties, responsibilities and ob..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p4_c3",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 0.7453314777831154,
+        "bm25_score": 0.5110643518433272,
+        "semantic_score": 0.7453314777831154,
+        "hit": false,
+        "snippet": "B. Non-Solicitation: You will not, during the course of your employment or at any time thereafter, without the prior written consent of the Company, directly or indirectly, solicit for employment, or employ or otherwise contract for the services of, any person..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 0.7382730213221812,
+        "bm25_score": 0.5907551437426638,
+        "semantic_score": 0.7382730213221812,
+        "hit": false,
+        "snippet": "Docusign Envelope ID: 2581ED32-E72F-4824-9936-0D0466E8A972 Annexure 2 TERMS AND CONDITIONS OF EMPLOYMENT 1) PROBATION You will be initially on probation for a period of 3 Months, which may be extended or reduced at the sole discretion of the Management. During..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p5_c3",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.7381533445202565,
+        "bm25_score": 0.3808797161548687,
+        "semantic_score": 0.7381533445202565,
+        "hit": false,
+        "snippet": "B. Performance: Your appointment and subsequent continuation of employment with the Company is strictly based on your delivering consistently on the agreed performance parameters and business targets."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p4_c5",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 0.7257804955980769,
+        "bm25_score": 0.5637867828538737,
+        "semantic_score": 0.7257804955980769,
+        "hit": false,
+        "snippet": "D. Work Hours: Your working hours at your place of posting shall be as per the rules and regulations of the company, specified from time to time. However, you may be required to work additional hours, as may be required from time to time, to carry out your dut..."
+      }
+    ]
+  },
+  {
+    "case_id": 3,
+    "mode": "hybrid",
+    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
+    "query": "When am I supposed to join the company?",
+    "note": "Natural start-date query",
+    "expected_any": [
+      "13th Aug 2024",
+      "2024-08-13"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hit_at_5": false,
+    "first_hit_rank": null,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p4_c2",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 0.598225077864851,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "A. Exclusivity: You agree to perform your duties, responsibilities and obligations efficiently and to the best of your ability. You agree that you will devote all of your working time, care and attention and best efforts to such duties, responsibilities and ob..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p4_c3",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 0.5,
+        "bm25_score": 0.5110643518433272,
+        "semantic_score": 0.7453314777831154,
+        "hit": false,
+        "snippet": "B. Non-Solicitation: You will not, during the course of your employment or at any time thereafter, without the prior written consent of the Company, directly or indirectly, solicit for employment, or employ or otherwise contract for the services of, any person..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 0.3333333333333333,
+        "bm25_score": 0.5907551437426638,
+        "semantic_score": 0.7382730213221812,
+        "hit": false,
+        "snippet": "Docusign Envelope ID: 2581ED32-E72F-4824-9936-0D0466E8A972 Annexure 2 TERMS AND CONDITIONS OF EMPLOYMENT 1) PROBATION You will be initially on probation for a period of 3 Months, which may be extended or reduced at the sole discretion of the Management. During..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p5_c3",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.25,
+        "bm25_score": 0.3808797161548687,
+        "semantic_score": 0.7381533445202565,
+        "hit": false,
+        "snippet": "B. Performance: Your appointment and subsequent continuation of employment with the Company is strictly based on your delivering consistently on the agreed performance parameters and business targets."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p4_c5",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 0.2,
+        "bm25_score": 0.5637867828538737,
+        "semantic_score": 0.7257804955980769,
+        "hit": false,
+        "snippet": "D. Work Hours: Your working hours at your place of posting shall be as per the rules and regulations of the company, specified from time to time. However, you may be required to work additional hours, as may be required from time to time, to carry out your dut..."
+      }
+    ]
+  },
+  {
+    "case_id": 4,
+    "mode": "bm25_only",
+    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
+    "query": "What is the fixed pay amount, not including ESOPs or bonus?",
+    "note": "Natural fixed-pay query",
+    "expected_any": [
+      "Fixed Pay: Rs. 38,00,000",
+      "38,00,000",
+      "3800000"
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 1,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p1_c1",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 0.7710187703355886,
+        "hit": true,
+        "snippet": "Docusign Envelope ID: 2581ED32-E72F-4824-9936-0D0466E8A972 OFFER LETTER Date: 12 Aug, 2024 Dear Avijit Kundal, Congratulations & Welcome to Flamily! We are delighted to offer you a position of Senior AI Engineer with Flying Flamingos India Private Limited (Fla..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p2_c1",
+        "page": 2,
+        "section_hint": null,
+        "combined_score": 0.7181861490402243,
+        "bm25_score": 0.7181861490402243,
+        "semantic_score": 0.7573388982486867,
+        "hit": false,
+        "snippet": "Docusign Envelope ID: 2581ED32-E72F-4824-9936-0D0466E8A972 Annexure 1A STRUCTURE OF CTC Description Per Monthly CTC (I) 3,800,000 316,667 Contribution to the Employer PF 21,600 1,800 Gross 3,778,400 314,867 Earning Basic Salary 1,889,200 157,433 HRA 755,680 62..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p5_c7",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.582077007894073,
+        "bm25_score": 0.582077007894073,
+        "semantic_score": 0.9031756495672418,
+        "hit": false,
+        "snippet": "E. Notice Period: Notwithstanding anything contained herein, the Company, in its sole discretion, may terminate your employment without cause by giving one month notice in writing or payment of pro rata one month Basic Salary, in lieu thereof. Likewise, you ma..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p6_c3",
+        "page": 6,
+        "section_hint": null,
+        "combined_score": 0.5795818726338541,
+        "bm25_score": 0.5795818726338541,
+        "semantic_score": 0.6957081734466498,
+        "hit": false,
+        "snippet": "I. Recovery of Payments: Payments / reimbursements made towards recovery of notice period by your previous employer and relocation expenses by us will be recovered in full in the event of your separation from the company before completion of one year of joinin..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p3_c5",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 0.5454768551210115,
+        "bm25_score": 0.5454768551210115,
+        "semantic_score": 0.5339830057439836,
+        "hit": false,
+        "snippet": "D. You have full right and authority to execute this contract and that you are not bound by any contract or arrangement, including any employment contract, bond or covenant not to compete, inconsistent herewith"
+      }
+    ]
+  },
+  {
+    "case_id": 4,
+    "mode": "semantic_only",
+    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
+    "query": "What is the fixed pay amount, not including ESOPs or bonus?",
+    "note": "Natural fixed-pay query",
+    "expected_any": [
+      "Fixed Pay: Rs. 38,00,000",
+      "38,00,000",
+      "3800000"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hit_at_5": false,
+    "first_hit_rank": null,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p2_c2",
+        "page": 2,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 0.0,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "Description | PerAnnum | PerMonthly CTC(I) | 3,800,000 | 316,667 ContributiontotheEmployerPF | 21,600 | 1,800 Gross | 3,778,400 | 314,867 Earning BasicSalary | 1,889,200 | 157,433 HRA | 755,680 | 62,973 SpecialAllowance/FlexibleBenefitPlanner | 1,133,520 | 94,..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p5_c7",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.9031756495672418,
+        "bm25_score": 0.582077007894073,
+        "semantic_score": 0.9031756495672418,
+        "hit": false,
+        "snippet": "E. Notice Period: Notwithstanding anything contained herein, the Company, in its sole discretion, may terminate your employment without cause by giving one month notice in writing or payment of pro rata one month Basic Salary, in lieu thereof. Likewise, you ma..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 0.8386181514126525,
+        "bm25_score": 0.43675005330280353,
+        "semantic_score": 0.8386181514126525,
+        "hit": false,
+        "snippet": "Docusign Envelope ID: 2581ED32-E72F-4824-9936-0D0466E8A972 Annexure 2 TERMS AND CONDITIONS OF EMPLOYMENT 1) PROBATION You will be initially on probation for a period of 3 Months, which may be extended or reduced at the sole discretion of the Management. During..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p5_c9",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.8251540293855761,
+        "bm25_score": 0.35775364267548376,
+        "semantic_score": 0.8251540293855761,
+        "hit": false,
+        "snippet": "G. Suspension: You may be placed under suspension, without salary, pending enquiry into the charges of misconduct or otherwise. The salary for the suspension period will be paid to you only when you are found not guilty of any of the charges for which you were..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p4_c4",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 0.8003945396585828,
+        "bm25_score": 0.49371707956936367,
+        "semantic_score": 0.8003945396585828,
+        "hit": false,
+        "snippet": "C. Controlling Interest: You agree that, so long as you are employed by the Company, you will not own, directly or indirectly, any controlling or substantial share or other beneficial interest in any business enterprise which is engaged in, or in competition w..."
+      }
+    ]
+  },
+  {
+    "case_id": 4,
+    "mode": "hybrid",
+    "doc_name": "Complete_with_Docusign_Avijit_Kundal-_Offer_.pdf",
+    "query": "What is the fixed pay amount, not including ESOPs or bonus?",
+    "note": "Natural fixed-pay query",
+    "expected_any": [
+      "Fixed Pay: Rs. 38,00,000",
+      "38,00,000",
+      "3800000"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hit_at_5": false,
+    "first_hit_rank": null,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p2_c2",
+        "page": 2,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 0.0,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "Description | PerAnnum | PerMonthly CTC(I) | 3,800,000 | 316,667 ContributiontotheEmployerPF | 21,600 | 1,800 Gross | 3,778,400 | 314,867 Earning BasicSalary | 1,889,200 | 157,433 HRA | 755,680 | 62,973 SpecialAllowance/FlexibleBenefitPlanner | 1,133,520 | 94,..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p5_c7",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.6166666666666667,
+        "bm25_score": 0.582077007894073,
+        "semantic_score": 0.9031756495672418,
+        "hit": false,
+        "snippet": "E. Notice Period: Notwithstanding anything contained herein, the Company, in its sole discretion, may terminate your employment without cause by giving one month notice in writing or payment of pro rata one month Basic Salary, in lieu thereof. Likewise, you ma..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 0.3333333333333333,
+        "bm25_score": 0.43675005330280353,
+        "semantic_score": 0.8386181514126525,
+        "hit": false,
+        "snippet": "Docusign Envelope ID: 2581ED32-E72F-4824-9936-0D0466E8A972 Annexure 2 TERMS AND CONDITIONS OF EMPLOYMENT 1) PROBATION You will be initially on probation for a period of 3 Months, which may be extended or reduced at the sole discretion of the Management. During..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p5_c9",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.25,
+        "bm25_score": 0.35775364267548376,
+        "semantic_score": 0.8251540293855761,
+        "hit": false,
+        "snippet": "G. Suspension: You may be placed under suspension, without salary, pending enquiry into the charges of misconduct or otherwise. The salary for the suspension period will be paid to you only when you are found not guilty of any of the charges for which you were..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p4_c4",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 0.2,
+        "bm25_score": 0.49371707956936367,
+        "semantic_score": 0.8003945396585828,
+        "hit": false,
+        "snippet": "C. Controlling Interest: You agree that, so long as you are employed by the Company, you will not own, directly or indirectly, any controlling or substantial share or other beneficial interest in any business enterprise which is engaged in, or in competition w..."
+      }
+    ]
+  },
+  {
+    "case_id": 5,
+    "mode": "bm25_only",
+    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
+    "query": "For incentive stock options, who is eligible to receive them?",
+    "note": "Natural ISO-eligibility query",
+    "expected_any": [
+      "Incentive Stock Options may only be granted to employees of the Company",
+      "employees of the Company"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hit_at_5": false,
+    "first_hit_rank": null,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p13_c1",
+        "page": 13,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 0.74281115916965,
+        "hit": false,
+        "snippet": "The determinations of the Board of Directors under this Plan need not be uniform and may be made by it selectively among persons who receive or are eligible to receive Options or Restricted Stock Awards under this Plan (whether or not such persons are similarl..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p10_c1",
+        "page": 10,
+        "section_hint": null,
+        "combined_score": 0.7044926327481416,
+        "bm25_score": 0.7044926327481416,
+        "semantic_score": 0.7727472319550698,
+        "hit": false,
+        "snippet": "issued, including any provision regarding vesting, and such securities, cash, or other property may be held in escrow on such terms as the Board of Directors may direct, to insure compliance with the terms of any such Restricted Stock Agreement. 16. No Special..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p1_c1",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 0.5879659738736016,
+        "bm25_score": 0.5879659738736016,
+        "semantic_score": 0.8182699618236504,
+        "hit": false,
+        "snippet": "FLAMINGOS TECHNOLOGIES INC. 2021 Stock Incentive Plan 1. Purpose. The purpose of this plan (the “Plan”) is to secure for Flamingos Technologies Inc., a Delaware corporation (the “Company”) and its shareholders the benefits arising from capital stock ownership..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p11_c1",
+        "page": 11,
+        "section_hint": null,
+        "combined_score": 0.5212609965343755,
+        "bm25_score": 0.5212609965343755,
+        "semantic_score": 0.7800548474965013,
+        "hit": false,
+        "snippet": "so withheld shall have a fair market value equal to such minimum withholding obligation. The fair market value of the shares used to satisfy such minimum withholding obligation shall be determined by the Company as of the date that the amount of tax to be with..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p9_c2",
+        "page": 9,
+        "section_hint": null,
+        "combined_score": 0.5011518232267763,
+        "bm25_score": 0.5011518232267763,
+        "semantic_score": 0.7066425771477994,
+        "hit": false,
+        "snippet": "To the extent that any Options are exercisable at a price equal to or in excess of the Per Share Transaction Price, the Board may provide that such Options shall terminate immediately upon the consummation of the Change in Control Transaction without any payme..."
+      }
+    ]
+  },
+  {
+    "case_id": 5,
+    "mode": "semantic_only",
+    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
+    "query": "For incentive stock options, who is eligible to receive them?",
+    "note": "Natural ISO-eligibility query",
+    "expected_any": [
+      "Incentive Stock Options may only be granted to employees of the Company",
+      "employees of the Company"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 2,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 0.43905477432990747,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "3.1 10% Shareholder. If any employee to whom an Incentive Stock Option is to be granted is, at the time of the grant of such Option, the owner of stock possessing more than 10% of the total combined voting power of all classes of stock of the Company (after ta..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p1_c2",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 0.9461346974830991,
+        "bm25_score": 0.47636397979502365,
+        "semantic_score": 0.9461346974830991,
+        "hit": true,
+        "snippet": "The vesting of Options may be conditioned upon the completion of a specified period of employment with the Company and/or such other conditions or events as the Board may determine. The Board may also provide that Options are immediately exercisable subject to..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p2_c1",
+        "page": 2,
+        "section_hint": null,
+        "combined_score": 0.929287109453867,
+        "bm25_score": 0.4007997698101553,
+        "semantic_score": 0.929287109453867,
+        "hit": false,
+        "snippet": "grant) of more than $100,000. If an Option is intended to be an Incentive Stock Option, and if for any reason such Option (or any portion thereof) shall not qualify as an Incentive Stock Option, then, to the extent of such nonqualification, such Option (or por..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p12_c2",
+        "page": 12,
+        "section_hint": null,
+        "combined_score": 0.8635427206311884,
+        "bm25_score": 0.4137275508975286,
+        "semantic_score": 0.8635427206311884,
+        "hit": false,
+        "snippet": "The Company shall not be obligated to take any affirmative action in order to cause the exercise of an Option, the grant of any Restricted Stock Award or the issuance of shares pursuant thereto to comply with any law or regulation of any governmental authority..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p2_c2",
+        "page": 2,
+        "section_hint": null,
+        "combined_score": 0.857333131818201,
+        "bm25_score": 0.4895806953536148,
+        "semantic_score": 0.857333131818201,
+        "hit": true,
+        "snippet": "The Board may correct any defect or supply any omission or reconcile any inconsistency in the Plan or in any Restricted Stock Agreement or Option Agreement in the manner and to the extent it shall deem expedient to carry the Plan into effect and it shall be th..."
+      }
+    ]
+  },
+  {
+    "case_id": 5,
+    "mode": "hybrid",
+    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
+    "query": "For incentive stock options, who is eligible to receive them?",
+    "note": "Natural ISO-eligibility query",
+    "expected_any": [
+      "Incentive Stock Options may only be granted to employees of the Company",
+      "employees of the Company"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 2,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 0.43905477432990747,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "3.1 10% Shareholder. If any employee to whom an Incentive Stock Option is to be granted is, at the time of the grant of such Option, the owner of stock possessing more than 10% of the total combined voting power of all classes of stock of the Company (after ta..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p1_c2",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 0.5,
+        "bm25_score": 0.47636397979502365,
+        "semantic_score": 0.9461346974830991,
+        "hit": true,
+        "snippet": "The vesting of Options may be conditioned upon the completion of a specified period of employment with the Company and/or such other conditions or events as the Board may determine. The Board may also provide that Options are immediately exercisable subject to..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p2_c1",
+        "page": 2,
+        "section_hint": null,
+        "combined_score": 0.3333333333333333,
+        "bm25_score": 0.4007997698101553,
+        "semantic_score": 0.929287109453867,
+        "hit": false,
+        "snippet": "grant) of more than $100,000. If an Option is intended to be an Incentive Stock Option, and if for any reason such Option (or any portion thereof) shall not qualify as an Incentive Stock Option, then, to the extent of such nonqualification, such Option (or por..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p12_c2",
+        "page": 12,
+        "section_hint": null,
+        "combined_score": 0.25,
+        "bm25_score": 0.4137275508975286,
+        "semantic_score": 0.8635427206311884,
+        "hit": false,
+        "snippet": "The Company shall not be obligated to take any affirmative action in order to cause the exercise of an Option, the grant of any Restricted Stock Award or the issuance of shares pursuant thereto to comply with any law or regulation of any governmental authority..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p2_c2",
+        "page": 2,
+        "section_hint": null,
+        "combined_score": 0.2,
+        "bm25_score": 0.4895806953536148,
+        "semantic_score": 0.857333131818201,
+        "hit": true,
+        "snippet": "The Board may correct any defect or supply any omission or reconcile any inconsistency in the Plan or in any Restricted Stock Agreement or Option Agreement in the manner and to the extent it shall deem expedient to carry the Plan into effect and it shall be th..."
+      }
+    ]
+  },
+  {
+    "case_id": 6,
+    "mode": "bm25_only",
+    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
+    "query": "What is the normal maximum term of an option, ignoring the 10% shareholder exception?",
+    "note": "Natural max-term disambiguation query",
+    "expected_any": [
+      "not later than ten years",
+      "ten years after the date on which the Option is granted",
+      "ten years"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hit_at_5": true,
+    "first_hit_rank": 4,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "3.1 10% Shareholder. If any employee to whom an Incentive Stock Option is to be granted is, at the time of the grant of such Option, the owner of stock possessing more than 10% of the total combined voting power of all classes of stock of the Company (after ta..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p4_c1",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 0.7521090967562823,
+        "bm25_score": 0.7521090967562823,
+        "semantic_score": 0.6701872999738817,
+        "hit": false,
+        "snippet": "loan, grant any option for the purchase of, or otherwise dispose of any shares of the common stock of the Company owned or controlled by him or her. 6. 6.1 General. The purchase price per share of Restricted Stock and per share of stock deliverable upon the ex..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p6_c2",
+        "page": 6,
+        "section_hint": null,
+        "combined_score": 0.728868115472122,
+        "bm25_score": 0.728868115472122,
+        "semantic_score": 0.6274273804270746,
+        "hit": false,
+        "snippet": "For purposes of this Section 10, the term “Cause” shall mean (a) any material breach by the optionee of any agreement to which the optionee and the Company are both parties, (b) any act (other than retirement) or omission to act by the optionee which may have..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p5_c1",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.7245801937484971,
+        "bm25_score": 0.7245801937484971,
+        "semantic_score": 0.8173001152626672,
+        "hit": true,
+        "snippet": "Option Period. Notwithstanding any other provision of the Plan or any Option Agreement, each Option and all rights thereunder shall expire on the date specified in the applicable Option Agreement, provided that such date shall not be later than ten years after..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p1_c1",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 0.7050700714384424,
+        "bm25_score": 0.7050700714384424,
+        "semantic_score": 0.4487663397294564,
+        "hit": false,
+        "snippet": "FLAMINGOS TECHNOLOGIES INC. 2021 Stock Incentive Plan 1. Purpose. The purpose of this plan (the “Plan”) is to secure for Flamingos Technologies Inc., a Delaware corporation (the “Company”) and its shareholders the benefits arising from capital stock ownership..."
+      }
+    ]
+  },
+  {
+    "case_id": 6,
+    "mode": "semantic_only",
+    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
+    "query": "What is the normal maximum term of an option, ignoring the 10% shareholder exception?",
+    "note": "Natural max-term disambiguation query",
+    "expected_any": [
+      "not later than ten years",
+      "ten years after the date on which the Option is granted",
+      "ten years"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 2,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "3.1 10% Shareholder. If any employee to whom an Incentive Stock Option is to be granted is, at the time of the grant of such Option, the owner of stock possessing more than 10% of the total combined voting power of all classes of stock of the Company (after ta..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p5_c1",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.8173001152626672,
+        "bm25_score": 0.7245801937484971,
+        "semantic_score": 0.8173001152626672,
+        "hit": true,
+        "snippet": "Option Period. Notwithstanding any other provision of the Plan or any Option Agreement, each Option and all rights thereunder shall expire on the date specified in the applicable Option Agreement, provided that such date shall not be later than ten years after..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p6_c1",
+        "page": 6,
+        "section_hint": null,
+        "combined_score": 0.7127539369009448,
+        "bm25_score": 0.6081617128403161,
+        "semantic_score": 0.7127539369009448,
+        "hit": false,
+        "snippet": "No Option shall be assignable or transferable by the person to whom it is granted, either voluntarily or by operation of law, except by will or the laws of descent and distribution. During the life of an optionee, an Option shall be exercisable only by the opt..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p7_c1",
+        "page": 7,
+        "section_hint": null,
+        "combined_score": 0.7072158968722817,
+        "bm25_score": 0.6576839117359119,
+        "semantic_score": 0.7072158968722817,
+        "hit": false,
+        "snippet": "executor, administrator or any person or persons to whom this option may be transferred by will or by laws of descent and distribution) shall have the right, at any time prior to such termination of an Option , to exercise the Option to the extent the optionee..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p5_c2",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.7022603090884874,
+        "bm25_score": 0.48935101764955397,
+        "semantic_score": 0.7022603090884874,
+        "hit": false,
+        "snippet": "In addition, the Company may require any individual to whom an Option is granted, as a condition of exercising such Option, to give written assurances (the “Investment Letter”) in a substance and form satisfactory to the Company to the effect that such individ..."
+      }
+    ]
+  },
+  {
+    "case_id": 6,
+    "mode": "hybrid",
+    "doc_name": "Flamingos - 2021 Stock Incentive Plan (78239934v1).pdf",
+    "query": "What is the normal maximum term of an option, ignoring the 10% shareholder exception?",
+    "note": "Natural max-term disambiguation query",
+    "expected_any": [
+      "not later than ten years",
+      "ten years after the date on which the Option is granted",
+      "ten years"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 2,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 1.35,
+        "bm25_score": 1.0,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "3.1 10% Shareholder. If any employee to whom an Incentive Stock Option is to be granted is, at the time of the grant of such Option, the owner of stock possessing more than 10% of the total combined voting power of all classes of stock of the Company (after ta..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p5_c1",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.5,
+        "bm25_score": 0.7245801937484971,
+        "semantic_score": 0.8173001152626672,
+        "hit": true,
+        "snippet": "Option Period. Notwithstanding any other provision of the Plan or any Option Agreement, each Option and all rights thereunder shall expire on the date specified in the applicable Option Agreement, provided that such date shall not be later than ten years after..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p6_c1",
+        "page": 6,
+        "section_hint": null,
+        "combined_score": 0.3333333333333333,
+        "bm25_score": 0.6081617128403161,
+        "semantic_score": 0.7127539369009448,
+        "hit": false,
+        "snippet": "No Option shall be assignable or transferable by the person to whom it is granted, either voluntarily or by operation of law, except by will or the laws of descent and distribution. During the life of an optionee, an Option shall be exercisable only by the opt..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p7_c1",
+        "page": 7,
+        "section_hint": null,
+        "combined_score": 0.25,
+        "bm25_score": 0.6576839117359119,
+        "semantic_score": 0.7072158968722817,
+        "hit": false,
+        "snippet": "executor, administrator or any person or persons to whom this option may be transferred by will or by laws of descent and distribution) shall have the right, at any time prior to such termination of an Option , to exercise the Option to the extent the optionee..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p5_c2",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.2,
+        "bm25_score": 0.48935101764955397,
+        "semantic_score": 0.7022603090884874,
+        "hit": false,
+        "snippet": "In addition, the Company may require any individual to whom an Option is granted, as a condition of exercising such Option, to give written assurances (the “Investment Letter”) in a substance and form satisfactory to the Company to the effect that such individ..."
+      }
+    ]
+  },
+  {
+    "case_id": 7,
+    "mode": "bm25_only",
+    "doc_name": "PolicySoftCopy_1105948950.pdf",
+    "query": "From which date does this policy start?",
+    "note": "Natural insurance start-date query",
+    "expected_any": [
+      "05/04/2026",
+      "2026-04-05",
+      "From 00:00 Hrs on 05/04/2026"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hit_at_5": true,
+    "first_hit_rank": 4,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p7_c2",
+        "page": 7,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 0.7797502976488635,
+        "hit": false,
+        "snippet": "In the event of any incorrect representation, the liability shall be upon the Policyholder. The Benefits which are mentioned in this Schedule shall only be available under the Policy In case of a renewal, the benefits provided under the policy and/or terms and..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p3_c3",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 0.9907949521546301,
+        "bm25_score": 0.9907949521546301,
+        "semantic_score": 0.7229149653542233,
+        "hit": false,
+        "snippet": "Intermediary Code/name: 21BRG642/Policybazaar Insurance Brokers Statutory Provisions: As per section 196 of the above act, driving a vehicle without valid insurance is punishable with fine up to ₹ 2,000/-or imprisonment up to 3 months or both.\" Note: In the ev..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p7_c1",
+        "page": 7,
+        "section_hint": "NOTE:",
+        "combined_score": 0.9660985856508029,
+        "bm25_score": 0.9660985856508029,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "NOTE: In the event of dishonor of cheque, this policy document automatically stands cancelled from inception irrespective of whether a separate communication is sent or not. The policy has been issued based on the information provided by you and the policy is..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p1_c1",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 0.8497107233676394,
+        "bm25_score": 0.8497107233676394,
+        "semantic_score": 0.7444401306113234,
+        "hit": true,
+        "snippet": "Compulsory Personal Accident (Owner Driver) under Motor Insurance Policies Policy Schedule Important: 1) The validity of this certificate of Insurance cum policy is subject to realization by the company of the premium cheque paid by the Insured Policy Number:..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p6_c11",
+        "page": 6,
+        "section_hint": "18. Any other material facts relevant for this insurance?",
+        "combined_score": 0.768465537273205,
+        "bm25_score": 0.768465537273205,
+        "semantic_score": 0.4302223250646035,
+        "hit": false,
+        "snippet": "18. Any other material facts relevant for this insurance? 19. Has any insurance company ever Declined Your Proposal Required an increase in premium Cancelled or Refused your Renewal Imposed Special Conditions or Excess 20. Details of Drivers: a) Age of the dri..."
+      }
+    ]
+  },
+  {
+    "case_id": 7,
+    "mode": "semantic_only",
+    "doc_name": "PolicySoftCopy_1105948950.pdf",
+    "query": "From which date does this policy start?",
+    "note": "Natural insurance start-date query",
+    "expected_any": [
+      "05/04/2026",
+      "2026-04-05",
+      "From 00:00 Hrs on 05/04/2026"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 2,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p7_c1",
+        "page": 7,
+        "section_hint": "NOTE:",
+        "combined_score": 1.0,
+        "bm25_score": 0.9660985856508029,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "NOTE: In the event of dishonor of cheque, this policy document automatically stands cancelled from inception irrespective of whether a separate communication is sent or not. The policy has been issued based on the information provided by you and the policy is..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p5_c3",
+        "page": 5,
+        "section_hint": "12. Period of Insurance",
+        "combined_score": 0.9165589239058952,
+        "bm25_score": 0.355567736317608,
+        "semantic_score": 0.9165589239058952,
+        "hit": true,
+        "snippet": "12. Period of Insurance From 00:00 Hrs of 05/04/2026 00:00 To Mid Night of 04/04/2027 23:59 (Cover will commence not earlier than the date & time of acceptance of risk and subsequent to the payment of premium by the insured to the company and realization there..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p5_c11",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.8939901183613116,
+        "bm25_score": 0.36197984720505577,
+        "semantic_score": 0.8939901183613116,
+        "hit": true,
+        "snippet": "If Yes please specify 11. Related Party | Yes No 12. Period of Insurance | From 00:00 Hrs of 05/04/2026 00:00 To Mid Night of 04/04/2027 23:59 (Cover will commence not earlier than the date & time of acceptance of risk and subsequent to the payment of premium..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p4_c11",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 0.8580118506355333,
+        "bm25_score": 0.4633560361646268,
+        "semantic_score": 0.8580118506355333,
+        "hit": true,
+        "snippet": "For Office Use Only Policy Number | 920292623071050303 | Date | 05/04/2026 00:00 Sourcing Reference No. | Inspection Lead No."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p7_c2",
+        "page": 7,
+        "section_hint": null,
+        "combined_score": 0.7797502976488635,
+        "bm25_score": 1.0,
+        "semantic_score": 0.7797502976488635,
+        "hit": false,
+        "snippet": "In the event of any incorrect representation, the liability shall be upon the Policyholder. The Benefits which are mentioned in this Schedule shall only be available under the Policy In case of a renewal, the benefits provided under the policy and/or terms and..."
+      }
+    ]
+  },
+  {
+    "case_id": 7,
+    "mode": "hybrid",
+    "doc_name": "PolicySoftCopy_1105948950.pdf",
+    "query": "From which date does this policy start?",
+    "note": "Natural insurance start-date query",
+    "expected_any": [
+      "05/04/2026",
+      "2026-04-05",
+      "From 00:00 Hrs on 05/04/2026"
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 2,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p7_c1",
+        "page": 7,
+        "section_hint": "NOTE:",
+        "combined_score": 1.1166666666666667,
+        "bm25_score": 0.9660985856508029,
+        "semantic_score": 1.0,
+        "hit": false,
+        "snippet": "NOTE: In the event of dishonor of cheque, this policy document automatically stands cancelled from inception irrespective of whether a separate communication is sent or not. The policy has been issued based on the information provided by you and the policy is..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p5_c3",
+        "page": 5,
+        "section_hint": "12. Period of Insurance",
+        "combined_score": 0.5,
+        "bm25_score": 0.355567736317608,
+        "semantic_score": 0.9165589239058952,
+        "hit": true,
+        "snippet": "12. Period of Insurance From 00:00 Hrs of 05/04/2026 00:00 To Mid Night of 04/04/2027 23:59 (Cover will commence not earlier than the date & time of acceptance of risk and subsequent to the payment of premium by the insured to the company and realization there..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p5_c11",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.3333333333333333,
+        "bm25_score": 0.36197984720505577,
+        "semantic_score": 0.8939901183613116,
+        "hit": true,
+        "snippet": "If Yes please specify 11. Related Party | Yes No 12. Period of Insurance | From 00:00 Hrs of 05/04/2026 00:00 To Mid Night of 04/04/2027 23:59 (Cover will commence not earlier than the date & time of acceptance of risk and subsequent to the payment of premium..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p4_c11",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 0.25,
+        "bm25_score": 0.4633560361646268,
+        "semantic_score": 0.8580118506355333,
+        "hit": true,
+        "snippet": "For Office Use Only Policy Number | 920292623071050303 | Date | 05/04/2026 00:00 Sourcing Reference No. | Inspection Lead No."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p7_c2",
+        "page": 7,
+        "section_hint": null,
+        "combined_score": 0.55,
+        "bm25_score": 1.0,
+        "semantic_score": 0.7797502976488635,
+        "hit": false,
+        "snippet": "In the event of any incorrect representation, the liability shall be upon the Policyholder. The Benefits which are mentioned in this Schedule shall only be available under the Policy In case of a renewal, the benefits provided under the policy and/or terms and..."
+      }
+    ]
+  },
+  {
+    "case_id": 8,
+    "mode": "bm25_only",
+    "doc_name": "PolicySoftCopy_1105948950.pdf",
+    "query": "What is the total premium payable including tax?",
+    "note": "Natural premium query",
+    "expected_any": [
+      "TOTAL PREMIUM PAYABLE",
+      "443"
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 1,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p1_c3",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 1.0,
+        "hit": true,
+        "snippet": "Premium Detail Amount (₹) Basic Premium | 375 Discount : | 0 Net Premium | 375 CGST (@ 9.00 % ) | 0 SGST (@ 9.00 % ) | 0 IGST (@ 18.00%) | 68 TOTAL PREMIUM PAYABLE (₹) | 443"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p1_c1",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 0.6130659977023062,
+        "bm25_score": 0.6130659977023062,
+        "semantic_score": 0.5764143409838139,
+        "hit": true,
+        "snippet": "Compulsory Personal Accident (Owner Driver) under Motor Insurance Policies Policy Schedule Important: 1) The validity of this certificate of Insurance cum policy is subject to realization by the company of the premium cheque paid by the Insured Policy Number:..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p1_c4",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 0.5054149272487066,
+        "bm25_score": 0.5054149272487066,
+        "semantic_score": 0.3507485055751018,
+        "hit": false,
+        "snippet": "Layout Singasandra Vehicle Details Registration No 1462 Type of Vehicle Private Car Seating Capacity including Driver 5 Gross Vehicle Weight Tenure 1 Year Premium Payment Mode Net Banking Singasandra Address Male Relationship with Policyholder 30/10/1991 Occup..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p7_c3",
+        "page": 7,
+        "section_hint": "1. No person shall allow or offer to allow, either directly or indirectly, as an inducement to any person to take out or",
+        "combined_score": 0.37236365682726785,
+        "bm25_score": 0.37236365682726785,
+        "semantic_score": 0.5483943063363358,
+        "hit": false,
+        "snippet": "1. No person shall allow or offer to allow, either directly or indirectly, as an inducement to any person to take out or renew or continue an insurance in respect of any kind or risk relating to lives or property in India, any rebate of the whole or part of th..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 0.35045517733203196,
+        "bm25_score": 0.35045517733203196,
+        "semantic_score": 0.7242059630211148,
+        "hit": false,
+        "snippet": "Minimum Premium : Rs 10 per Lac CSI of other PA policies : Rs______ declared by use : The Policy covers use of the vehicle for any purpose other than: (a) Hire or Reward (b) Carriage of goods (other than samples or personal luggage) (c) Organized racing (d) Pa..."
+      }
+    ]
+  },
+  {
+    "case_id": 8,
+    "mode": "semantic_only",
+    "doc_name": "PolicySoftCopy_1105948950.pdf",
+    "query": "What is the total premium payable including tax?",
+    "note": "Natural premium query",
+    "expected_any": [
+      "TOTAL PREMIUM PAYABLE",
+      "443"
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 1,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p1_c3",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 1.0,
+        "hit": true,
+        "snippet": "Premium Detail Amount (₹) Basic Premium | 375 Discount : | 0 Net Premium | 375 CGST (@ 9.00 % ) | 0 SGST (@ 9.00 % ) | 0 IGST (@ 18.00%) | 68 TOTAL PREMIUM PAYABLE (₹) | 443"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p6_c1",
+        "page": 6,
+        "section_hint": "18. Any other material facts relevant for this insurance?",
+        "combined_score": 0.8099020903093369,
+        "bm25_score": 0.0,
+        "semantic_score": 0.8099020903093369,
+        "hit": false,
+        "snippet": "18. Any other material facts relevant for this insurance?"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p5_c5",
+        "page": 5,
+        "section_hint": "14. Do you have any PA Cover, covering Death & Permanent",
+        "combined_score": 0.7597446608649182,
+        "bm25_score": 0.3432322950822194,
+        "semantic_score": 0.7597446608649182,
+        "hit": false,
+        "snippet": "14. Do you have any PA Cover, covering Death & Permanent Disability (Total & Partial) of atleast 15 lacs or more"
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 0.7242059630211148,
+        "bm25_score": 0.35045517733203196,
+        "semantic_score": 0.7242059630211148,
+        "hit": false,
+        "snippet": "Minimum Premium : Rs 10 per Lac CSI of other PA policies : Rs______ declared by use : The Policy covers use of the vehicle for any purpose other than: (a) Hire or Reward (b) Carriage of goods (other than samples or personal luggage) (c) Organized racing (d) Pa..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p7_c2",
+        "page": 7,
+        "section_hint": null,
+        "combined_score": 0.7108603496778618,
+        "bm25_score": 0.32838912954630045,
+        "semantic_score": 0.7108603496778618,
+        "hit": false,
+        "snippet": "In the event of any incorrect representation, the liability shall be upon the Policyholder. The Benefits which are mentioned in this Schedule shall only be available under the Policy In case of a renewal, the benefits provided under the policy and/or terms and..."
+      }
+    ]
+  },
+  {
+    "case_id": 8,
+    "mode": "hybrid",
+    "doc_name": "PolicySoftCopy_1105948950.pdf",
+    "query": "What is the total premium payable including tax?",
+    "note": "Natural premium query",
+    "expected_any": [
+      "TOTAL PREMIUM PAYABLE",
+      "443"
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 1,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p1_c3",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 1.35,
+        "bm25_score": 1.0,
+        "semantic_score": 1.0,
+        "hit": true,
+        "snippet": "Premium Detail Amount (₹) Basic Premium | 375 Discount : | 0 Net Premium | 375 CGST (@ 9.00 % ) | 0 SGST (@ 9.00 % ) | 0 IGST (@ 18.00%) | 68 TOTAL PREMIUM PAYABLE (₹) | 443"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p6_c1",
+        "page": 6,
+        "section_hint": "18. Any other material facts relevant for this insurance?",
+        "combined_score": 0.5,
+        "bm25_score": 0.0,
+        "semantic_score": 0.8099020903093369,
+        "hit": false,
+        "snippet": "18. Any other material facts relevant for this insurance?"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p5_c5",
+        "page": 5,
+        "section_hint": "14. Do you have any PA Cover, covering Death & Permanent",
+        "combined_score": 0.3333333333333333,
+        "bm25_score": 0.3432322950822194,
+        "semantic_score": 0.7597446608649182,
+        "hit": false,
+        "snippet": "14. Do you have any PA Cover, covering Death & Permanent Disability (Total & Partial) of atleast 15 lacs or more"
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 0.25,
+        "bm25_score": 0.35045517733203196,
+        "semantic_score": 0.7242059630211148,
+        "hit": false,
+        "snippet": "Minimum Premium : Rs 10 per Lac CSI of other PA policies : Rs______ declared by use : The Policy covers use of the vehicle for any purpose other than: (a) Hire or Reward (b) Carriage of goods (other than samples or personal luggage) (c) Organized racing (d) Pa..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p7_c2",
+        "page": 7,
+        "section_hint": null,
+        "combined_score": 0.2,
+        "bm25_score": 0.32838912954630045,
+        "semantic_score": 0.7108603496778618,
+        "hit": false,
+        "snippet": "In the event of any incorrect representation, the liability shall be upon the Policyholder. The Benefits which are mentioned in this Schedule shall only be available under the Policy In case of a renewal, the benefits provided under the policy and/or terms and..."
+      }
+    ]
+  },
+  {
+    "case_id": 9,
+    "mode": "bm25_only",
+    "doc_name": "AI Lead Assignment - 1.pdf",
+    "query": "If the user asks for multiple payment due dates, what output type should be returned?",
+    "note": "Natural output-type query",
+    "expected_any": [
+      "array[date]",
+      "List all payment due dates.",
+      "[\"2024-01-01\", \"2024-04-01\", \"2024-07-01\"]"
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 1,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p5_c1",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 0.9892136466206314,
+        "hit": true,
+        "snippet": "\"List all payment due dates.\" array[date] [\"2024-01-01\", \"2024-04-01\", \"2024-07-01\"]"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p5_c4",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 1.0,
+        "hit": true,
+        "snippet": "\"List all payment due dates.\" | array[date] | [\"2024-01-01\", \"2024-04-01\", \"2024-07-01\"]"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p3_c4",
+        "page": 3,
+        "section_hint": "3.2 Query + Type Enforcement",
+        "combined_score": 0.9929752798096445,
+        "bm25_score": 0.9929752798096445,
+        "semantic_score": 0.4699850736816694,
+        "hit": false,
+        "snippet": "3.2 Query + Type Enforcement ●​ Interpret the natural-language query as a single term to extract and use the output_type to enforce the answer type. ●​ Validate the result type before returning (e.g., if the caller asks for number, don't return a string). ●​ R..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 0.8892074389861275,
+        "bm25_score": 0.8892074389861275,
+        "semantic_score": 0.6691941393857963,
+        "hit": false,
+        "snippet": "Free-form text, names, clauses \"Acme Corp\" Date ISO-8601 date string Numeric values (integers or decimals) Multiple text values [\"Party A\", \"Party B\"] Array of Dates Multiple dates [\"2024-01-01\", \"2025-01-01\"] Array of Multiple numeric values [5.25, 3.50] The..."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p3_c5",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 0.5573943801568702,
+        "bm25_score": 0.5573943801568702,
+        "semantic_score": 0.5619810271753535,
+        "hit": false,
+        "snippet": "Type | Description | Example Value String | Free-form text, names, clauses | \"Acme Corp\" Date | ISO-8601 date string | \"2024-03-15\" Number | Numeric values (integers or decimals) | 5.25 Array of Strings | Multiple text values | [\"Party A\", \"Party B\"] Array of..."
+      }
+    ]
+  },
+  {
+    "case_id": 9,
+    "mode": "semantic_only",
+    "doc_name": "AI Lead Assignment - 1.pdf",
+    "query": "If the user asks for multiple payment due dates, what output type should be returned?",
+    "note": "Natural output-type query",
+    "expected_any": [
+      "array[date]",
+      "List all payment due dates.",
+      "[\"2024-01-01\", \"2024-04-01\", \"2024-07-01\"]"
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 1,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p5_c4",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 1.0,
+        "hit": true,
+        "snippet": "\"List all payment due dates.\" | array[date] | [\"2024-01-01\", \"2024-04-01\", \"2024-07-01\"]"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p5_c1",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.9892136466206314,
+        "bm25_score": 1.0,
+        "semantic_score": 0.9892136466206314,
+        "hit": true,
+        "snippet": "\"List all payment due dates.\" array[date] [\"2024-01-01\", \"2024-04-01\", \"2024-07-01\"]"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p4_c5",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 0.735953013761333,
+        "bm25_score": 0.5560625137270052,
+        "semantic_score": 0.735953013761333,
+        "hit": false,
+        "snippet": "Query | Output Type | Example Output \"Who is the tenant?\" | string | \"Greenfield Properties LLC\" \"When does the lease start?\" | date | \"2024-03-15\" \"What is the annual interest rate?\" | number | 5.25 \"What is the non-compete duration?\" | string | \"18 months\" \"..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p4_c6",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 0.6817085754071359,
+        "bm25_score": 0.1213455169760919,
+        "semantic_score": 0.6817085754071359,
+        "hit": false,
+        "snippet": "Output Type string \"2024-03-15\" number 5.25 string"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 0.6691941393857963,
+        "bm25_score": 0.8892074389861275,
+        "semantic_score": 0.6691941393857963,
+        "hit": false,
+        "snippet": "Free-form text, names, clauses \"Acme Corp\" Date ISO-8601 date string Numeric values (integers or decimals) Multiple text values [\"Party A\", \"Party B\"] Array of Dates Multiple dates [\"2024-01-01\", \"2025-01-01\"] Array of Multiple numeric values [5.25, 3.50] The..."
+      }
+    ]
+  },
+  {
+    "case_id": 9,
+    "mode": "hybrid",
+    "doc_name": "AI Lead Assignment - 1.pdf",
+    "query": "If the user asks for multiple payment due dates, what output type should be returned?",
+    "note": "Natural output-type query",
+    "expected_any": [
+      "array[date]",
+      "List all payment due dates.",
+      "[\"2024-01-01\", \"2024-04-01\", \"2024-07-01\"]"
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 1,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p5_c4",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 1.175,
+        "bm25_score": 1.0,
+        "semantic_score": 1.0,
+        "hit": true,
+        "snippet": "\"List all payment due dates.\" | array[date] | [\"2024-01-01\", \"2024-04-01\", \"2024-07-01\"]"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p5_c1",
+        "page": 5,
+        "section_hint": null,
+        "combined_score": 0.85,
+        "bm25_score": 1.0,
+        "semantic_score": 0.9892136466206314,
+        "hit": true,
+        "snippet": "\"List all payment due dates.\" array[date] [\"2024-01-01\", \"2024-04-01\", \"2024-07-01\"]"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p4_c5",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 0.3333333333333333,
+        "bm25_score": 0.5560625137270052,
+        "semantic_score": 0.735953013761333,
+        "hit": false,
+        "snippet": "Query | Output Type | Example Output \"Who is the tenant?\" | string | \"Greenfield Properties LLC\" \"When does the lease start?\" | date | \"2024-03-15\" \"What is the annual interest rate?\" | number | 5.25 \"What is the non-compete duration?\" | string | \"18 months\" \"..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p4_c6",
+        "page": 4,
+        "section_hint": null,
+        "combined_score": 0.25,
+        "bm25_score": 0.1213455169760919,
+        "semantic_score": 0.6817085754071359,
+        "hit": false,
+        "snippet": "Output Type string \"2024-03-15\" number 5.25 string"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p3_c1",
+        "page": 3,
+        "section_hint": null,
+        "combined_score": 0.2,
+        "bm25_score": 0.8892074389861275,
+        "semantic_score": 0.6691941393857963,
+        "hit": false,
+        "snippet": "Free-form text, names, clauses \"Acme Corp\" Date ISO-8601 date string Numeric values (integers or decimals) Multiple text values [\"Party A\", \"Party B\"] Array of Dates Multiple dates [\"2024-01-01\", \"2025-01-01\"] Array of Multiple numeric values [5.25, 3.50] The..."
+      }
+    ]
+  },
+  {
+    "case_id": 10,
+    "mode": "bm25_only",
+    "doc_name": "AI Lead Assignment - 1.pdf",
+    "query": "Do we need to return supporting text from the PDF, or only the final answer?",
+    "note": "Natural source-attribution query",
+    "expected_any": [
+      "Every extracted value must include the page number",
+      "relevant text snippets",
+      "This is critical for auditability"
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 1,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p4_c1",
+        "page": 4,
+        "section_hint": "3.3 Source Attribution (Mandatory)",
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 1.0,
+        "hit": true,
+        "snippet": "3.3 Source Attribution (Mandatory) ●​ Every extracted value must include the page number and a relevant text snippets from the source PDF. ●​ The snippets should be the actual passage the answer was derived from, not a paraphrase"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p2_c1",
+        "page": 2,
+        "section_hint": "2. Interface",
+        "combined_score": 0.8273622489851558,
+        "bm25_score": 0.8273622489851558,
+        "semantic_score": 0.7301384218639574,
+        "hit": true,
+        "snippet": "2. Interface Implement a function (or CLI command) with this signature: None extract( pdf: bytes | path, # The source PDF document query: str, # Single term to extract (natural language) output_type: ..., # Expected answer type (string, date, number, array, et..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p1_c2",
+        "page": 1,
+        "section_hint": "1. Overview",
+        "combined_score": 0.6873137592062196,
+        "bm25_score": 0.6873137592062196,
+        "semantic_score": 0.5764134811228795,
+        "hit": false,
+        "snippet": "1. Overview Build a generic extraction system that pulls a single piece of structured information from a legal PDF document per call. The system accepts a natural-language query describing one term to extract, an optional set of few-shot examples, and an expec..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p1_c1",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 0.66619950157355,
+        "bm25_score": 0.66619950157355,
+        "semantic_score": 0.5896597808175115,
+        "hit": false,
+        "snippet": "Take-Home Assignment - 1 PDF Data Extraction for Legal Documents Duration 1-2 Days Confidential - For evaluation purposes only"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p3_c4",
+        "page": 3,
+        "section_hint": "3.2 Query + Type Enforcement",
+        "combined_score": 0.6372496660702023,
+        "bm25_score": 0.6372496660702023,
+        "semantic_score": 0.5318666422156688,
+        "hit": false,
+        "snippet": "3.2 Query + Type Enforcement ●​ Interpret the natural-language query as a single term to extract and use the output_type to enforce the answer type. ●​ Validate the result type before returning (e.g., if the caller asks for number, don't return a string). ●​ R..."
+      }
+    ]
+  },
+  {
+    "case_id": 10,
+    "mode": "semantic_only",
+    "doc_name": "AI Lead Assignment - 1.pdf",
+    "query": "Do we need to return supporting text from the PDF, or only the final answer?",
+    "note": "Natural source-attribution query",
+    "expected_any": [
+      "Every extracted value must include the page number",
+      "relevant text snippets",
+      "This is critical for auditability"
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 1,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p4_c1",
+        "page": 4,
+        "section_hint": "3.3 Source Attribution (Mandatory)",
+        "combined_score": 1.0,
+        "bm25_score": 1.0,
+        "semantic_score": 1.0,
+        "hit": true,
+        "snippet": "3.3 Source Attribution (Mandatory) ●​ Every extracted value must include the page number and a relevant text snippets from the source PDF. ●​ The snippets should be the actual passage the answer was derived from, not a paraphrase"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p2_c1",
+        "page": 2,
+        "section_hint": "2. Interface",
+        "combined_score": 0.7301384218639574,
+        "bm25_score": 0.8273622489851558,
+        "semantic_score": 0.7301384218639574,
+        "hit": true,
+        "snippet": "2. Interface Implement a function (or CLI command) with this signature: None extract( pdf: bytes | path, # The source PDF document query: str, # Single term to extract (natural language) output_type: ..., # Expected answer type (string, date, number, array, et..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p4_c3",
+        "page": 4,
+        "section_hint": "3.5 General",
+        "combined_score": 0.6018245067925978,
+        "bm25_score": 0.3960101015148952,
+        "semantic_score": 0.6018245067925978,
+        "hit": false,
+        "snippet": "3.5 General ●​ Keep components modular: PDF parser, LLM client, and type validator should be separate. ●​ Return structured errors - never let raw LLM exceptions reach the caller. ●​ Be cost-conscious with token usage: avoid sending entire documents when targe..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p1_c1",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 0.5896597808175115,
+        "bm25_score": 0.66619950157355,
+        "semantic_score": 0.5896597808175115,
+        "hit": false,
+        "snippet": "Take-Home Assignment - 1 PDF Data Extraction for Legal Documents Duration 1-2 Days Confidential - For evaluation purposes only"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p1_c2",
+        "page": 1,
+        "section_hint": "1. Overview",
+        "combined_score": 0.5764134811228795,
+        "bm25_score": 0.6873137592062196,
+        "semantic_score": 0.5764134811228795,
+        "hit": false,
+        "snippet": "1. Overview Build a generic extraction system that pulls a single piece of structured information from a legal PDF document per call. The system accepts a natural-language query describing one term to extract, an optional set of few-shot examples, and an expec..."
+      }
+    ]
+  },
+  {
+    "case_id": 10,
+    "mode": "hybrid",
+    "doc_name": "AI Lead Assignment - 1.pdf",
+    "query": "Do we need to return supporting text from the PDF, or only the final answer?",
+    "note": "Natural source-attribution query",
+    "expected_any": [
+      "Every extracted value must include the page number",
+      "relevant text snippets",
+      "This is critical for auditability"
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hit_at_5": true,
+    "first_hit_rank": 1,
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": "p4_c1",
+        "page": 4,
+        "section_hint": "3.3 Source Attribution (Mandatory)",
+        "combined_score": 1.35,
+        "bm25_score": 1.0,
+        "semantic_score": 1.0,
+        "hit": true,
+        "snippet": "3.3 Source Attribution (Mandatory) ●​ Every extracted value must include the page number and a relevant text snippets from the source PDF. ●​ The snippets should be the actual passage the answer was derived from, not a paraphrase"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "p2_c1",
+        "page": 2,
+        "section_hint": "2. Interface",
+        "combined_score": 0.675,
+        "bm25_score": 0.8273622489851558,
+        "semantic_score": 0.7301384218639574,
+        "hit": true,
+        "snippet": "2. Interface Implement a function (or CLI command) with this signature: None extract( pdf: bytes | path, # The source PDF document query: str, # Single term to extract (natural language) output_type: ..., # Expected answer type (string, date, number, array, et..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "p4_c3",
+        "page": 4,
+        "section_hint": "3.5 General",
+        "combined_score": 0.3333333333333333,
+        "bm25_score": 0.3960101015148952,
+        "semantic_score": 0.6018245067925978,
+        "hit": false,
+        "snippet": "3.5 General ●​ Keep components modular: PDF parser, LLM client, and type validator should be separate. ●​ Return structured errors - never let raw LLM exceptions reach the caller. ●​ Be cost-conscious with token usage: avoid sending entire documents when targe..."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "p1_c1",
+        "page": 1,
+        "section_hint": null,
+        "combined_score": 0.25,
+        "bm25_score": 0.66619950157355,
+        "semantic_score": 0.5896597808175115,
+        "hit": false,
+        "snippet": "Take-Home Assignment - 1 PDF Data Extraction for Legal Documents Duration 1-2 Days Confidential - For evaluation purposes only"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "p1_c2",
+        "page": 1,
+        "section_hint": "1. Overview",
+        "combined_score": 0.31666666666666665,
+        "bm25_score": 0.6873137592062196,
+        "semantic_score": 0.5764134811228795,
+        "hit": false,
+        "snippet": "1. Overview Build a generic extraction system that pulls a single piece of structured information from a legal PDF document per call. The system accepts a natural-language query describing one term to extract, an optional set of few-shot examples, and an expec..."
+      }
+    ]
+  }
+]
