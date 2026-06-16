@@ -1,4 +1,4 @@
-# HyperVerge Assignment
+# HyperVerge Legal RAG Data Extractor
 
 This repository contains both parts of the HyperVerge AI Lead take-home assignment.
 
